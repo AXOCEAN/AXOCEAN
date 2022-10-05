@@ -111,16 +111,16 @@ body{
 }
 .designscontainer{
     display: flex;
-   
-  /* flex-wrap: wrap; */
-   
     scroll-behavior: smooth;
-    /* overflow-x: scroll; */
-
+  
+    height: 510px;
+   
+    align-items: center;
     overflow-y: scroll;
     max-height: auto;
-    /* justify-content:center; */
-    
+}
+.designscontainer::-webkit-scrollbar{
+   width: 0;
 }
 
 .design1{
@@ -132,6 +132,7 @@ body{
     height: 450px;
     backdrop-filter: blur(3px);
     background-color: rgba(54, 53, 53, 0.496);
+ 
     border-radius: 20px;
     
     display: flex;
