@@ -1,0 +1,597 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+html {
+    font-size: 62.5%;
+}
+body{
+    margin-top: 100px;
+    
+    width: 100%;
+    height: 100vh; 
+    background-size: cover;
+}
+
+
+.nav_bar {
+   
+    backdrop-filter: blur(5px);
+    background-color: rgba(254, 254, 254, 0.896);
+    position: fixed;
+    top: 0;
+    z-index: 99;
+   
+    width: 100%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0px 0px 10px 0.1px gray;
+}
+
+.btn {
+    /* for Home button logo */
+    background-color: transparent;
+    /* Blue background */
+    border: none;
+    /* Remove borders */
+    color: black;
+    /* White text */
+    padding: 12px 16px;
+    /* Some padding */
+    font-size: 2.5rem;
+    /* Set a font size */
+    cursor: pointer;
+    /* Mouse pointer on hover */
+}
+
+.btn a {
+
+    text-decoration: none;
+    color: black;
+    -webkit-font-smoothing: antialiased;
+    font-weight: bold;
+
+}
+
+/* nav bar home button logo code above */
+
+
+
+/* for AXOCEAN heading */
+.heading {
+    font-size: 3rem;
+    color: black;
+    cursor: pointer;
+    font-family: Whitney, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    font-weight: bold;
+    align-self: center;
+    
+}
+
+/* Dropdown Button */
+.dropbtn {
+    background-color: transparent;
+    color: transparent;
+    padding: 12px 16px;
+    font-size: 2.5rem;
+    font-family: Whitney, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    font-weight: bold;
+    border: none;
+    
+}
+.singleproduct{
+   border-radius: 15px;
+   background-color: rgba(71, 95, 100, 0.279);
+   box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.404);
+   border: 2px solid white;
+   width: 90%;
+   backdrop-filter: blur(1.5px);
+   max-width: fit-content;
+  
+   
+}
+
+
+.small-img-group{
+display: flex;
+align-items: center;
+justify-content: center;
+margin-top: 10px;
+
+padding-left: 30px;
+padding-right: 30px;
+
+}
+.small-img-col{
+ 
+
+    
+
+ display: flex;
+ align-items: center;
+ justify-content: center;
+}
+#colorchangingsection{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  
+}
+#MainImg{
+    
+    width: 80%;
+border-radius: 10px;
+ box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.511);
+}
+.small-img{
+    border-radius:50%;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.604);
+    width: 70%;
+}
+.small-img:hover {
+    /* products flex hover  */
+    transform: translate(-2px, -5px);
+    transition-duration: 150ms;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.355);
+    border: 2px solid rgb(255, 255, 255);
+
+
+}
+.productdetailscontainer{
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 30px;
+
+}
+.headingofproduct{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 4rem;
+    font-weight: bolder;
+    color: white;
+    font-style: italic;
+    text-shadow: 0px 5px 10px rgba(1, 1, 1, 0.536);
+    padding-bottom: 40px;
+    
+  
+  
+}
+.productdetailsheading{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 3.5rem;
+    font-weight: bold;
+    color: rgb(249, 142, 76);
+    text-shadow: 0px 5px 10px rgba(1, 1, 1, 0.536);
+    
+ 
+   
+   
+}
+.description{
+    font-size: 1.6rem;
+    color: rgb(255, 255, 255);
+  
+  
+    
+}
+/* footercode starts from here */
+footer{
+    margin-top: 30px;
+    background-color: rgb(74, 74, 74);
+   
+    height: auto;
+    width: 100%;
+    font-family: "Open Sans";
+    padding-top: 40px;
+    color: #fff;
+
+
+}
+.footercontainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction:column;
+/* background-color: red; */
+    
+}
+.websiteheading{
+    font-size: 2.5rem;
+    font-weight: 400;
+    text-transform: capitalize;
+    line-height: 3rem;
+    margin: 0rem 0 1rem 0;
+
+
+}
+.description{
+    /* max-width:500px; */
+    /* margin:10px auto; */
+    line-height:28px;
+    font-size: 12px;
+    text-align: center;
+    color: rgba(221, 221, 221, 0.728);
+    margin: 0rem 0 1rem 0;
+    
+
+}
+
+.socialmedialogos{
+    
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 1rem 0 3rem 0;
+    /* background-color: red; */
+    width: 200px;
+    
+    
+
+   
+
+}
+.socialmedialogos li{
+    margin: 0 10px;
+}
+.socialmedialogos a{
+    text-decoration: none;
+    color: #fff;
+
+}
+.socialmedialogos a {
+font-size: 4rem;
+
+}
+#instgram{
+    transition: color .2s ease;
+}
+#instagram:hover{
+color: #e41da2 ; 
+}
+#pinterest{
+    transition: color .2s ease;
+}
+#pinterest:hover{
+color: rgb(208, 10, 10) ; 
+}
+#facebook{
+    transition: color .2s ease;
+}
+#facebook:hover{
+color: rgb(123, 123, 254) ; 
+}
+
+
+/* .contact{
+    background-color: transparent;
+    border: 1px solid #ddd;
+    height: 30px;
+    width: 100px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    margin: 1rem 0 3rem 0;
+    font-size: 12px;
+    color: white;
+    
+    text-decoration: none;
+   transition: .2s ease;
+   
+
+}
+.contact:hover{
+    background-color: #ddd;
+    color: black;
+    border: 1px solid black;
+    box-shadow: 1px 5px 10px black;
+} */
+
+.footerbottom{
+    background-color:rgba(162, 154, 154, 0.375);
+    width: 100%;
+    padding: 20px 0px;
+   
+ 
+   
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.footerbottom p{
+    font-size: 14px;
+    word-spacing:2px;
+    text-transform: capitalize;
+}
+/* footercode ends here */
+
+/* Contact Form code starts from here */
+.floating-contact-form .contact-icon {
+    position: fixed;
+    bottom: 4px;
+    right: 5px;
+    cursor: pointer;
+    padding: 16px;
+  }
+  
+  .floating-contact-form .contact-icon i {
+    font-size: 42px;
+    color: #003049;
+    transition: all 300ms ease;
+    backdrop-filter: blur(5px);
+    
+  }
+  
+  .floating-contact-form .contact-icon i:hover {
+    transform: scale(1.1);
+  }
+  
+  .floating-contact-form .form-container {
+    position: fixed;
+    bottom: 60px;
+    right: 45px;
+    
+    background-color: rgba(255, 255, 255, 0.168);
+    backdrop-filter: blur(5px);
+    padding: 24px 36px;
+    width: 300px;
+    font-family: "Roboto", sans-serif;
+    box-shadow: 0 10px 50px rgba(0, 0, 0, 0.1);
+    border-radius: 24px;
+   z-index: 99; 
+    transform: rotateZ(-6deg);
+    transform-origin: bottom right;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 500ms ease;
+  }
+  
+  .floating-contact-form .form-container.active {
+    transform: rotateZ(0deg);
+    opacity: 1;
+    pointer-events: auto;
+  }
+  
+  .floating-contact-form * {
+    box-sizing: border-box;
+  
+  }
+  
+  .floating-contact-form h3 {
+    font-size: 3.3rem;
+    
+    color: #003049;
+    margin-top: 10px;
+    position: relative;
+    margin-bottom: 8px;
+  }
+  
+  .floating-contact-form h3::after {
+    content: "";
+    height: 3px;
+    width: 36px;
+    /* background: #ef233c; */
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+  }
+  
+  .floating-contact-form form input[type="text"],
+  .floating-contact-form form textarea {
+    width: 100%;
+    padding: 14px 20px;
+    padding-left: 40px;
+    font-size: 16px;
+    border: 1px solid rgba(0, 47, 73, 0.3);
+    border-radius: 8px;
+    color: #003049;
+    margin-bottom: 20px;
+  }
+  
+  .floating-contact-form form input:focus,
+  .floating-contact-form form textarea:focus {
+    outline: none;
+  }
+  
+  .floating-contact-form .field-container {
+    position: relative;
+  }
+  
+  .floating-contact-form .field-container label {
+    position: absolute;
+    opacity: 0;
+    /* top: 15px;
+    left: 40px; */
+    color: #003049;
+    font-size: 1.7rem;
+    border-left: 8px solid #fff;
+    border-right: 8px solid #fff;
+    transition: all 300ms ease;
+    pointer-events: none;
+  }
+  ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: rgba(88, 120, 163, 0.555);
+    font-size: 1.6rem;
+    opacity: 1; /* Firefox */
+  }
+  
+  :-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: rgba(88, 120, 163, 0.555);
+  }
+  
+  ::-ms-input-placeholder { /* Microsoft Edge */
+    color: rgba(88, 120, 163, 0.555);
+  }
+  #nameicon{
+   font-size: 2rem;
+  }
+  #emailicon{
+    font-size: 2rem;
+   }
+   #messageicon{
+    font-size: 2rem;
+
+   }
+
+  
+  .floating-contact-form .field-container label.active {
+    font-size: 1.7rem;
+    background: rgba(0, 0, 0, 0.114);
+    backdrop-filter: blur(10px);
+    /* border-radius: 60%; */
+    color: #fff;
+    padding: 2px 16px;
+    top: -8px;
+    left: 24px;
+    font-weight: bold;
+    opacity: 1;
+  }
+  
+  .floating-contact-form .field-container i {
+    position: absolute;
+    /* background-color: red; */
+    top: 15px;
+
+    left: 12px;
+    color: rgba(0, 55, 85, 0.8);
+  }
+
+  
+  .floating-contact-form form textarea {
+    height: 150px;
+    resize: none;
+    font-size: 16px;
+    font-family: "Roboto", sans-serif;
+  }
+  
+  
+  .floating-contact-form form input[type="submit"] {
+    border: none;
+    background: #003049;
+    color: #fff;
+    padding: 16px 32px;
+    width: 100%;
+    border-radius: 24px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 500ms ease;
+  }
+  
+  .floating-contact-form form input[type="submit"]:hover {
+    background: #00659b;
+  }
+/* Contact form code ends here */
+
+/* responsive code below*/
+@media screen and (max-width:1920px) {
+    html {
+        font-size: 60%;
+    }
+    .nav_bar {
+        width: 100%;
+        height: 80px;
+    }
+
+    .heading {
+        font-size: 3rem;
+
+    }
+
+}
+
+@media screen and (max-width:1200px) {
+    html {
+        font-size: 65%;
+    }
+    .nav_bar {
+        width: 100%;
+        height: 80px;
+    }
+
+    .heading {
+        font-size: 3rem;
+
+    }
+}
+
+@media screen and (max-width:998px) {
+    html {
+        font-size: 55%;
+    }
+    .nav_bar {
+        width: 100%;
+        height: 80px;
+    }
+
+    .heading {
+        font-size: 3rem;
+
+    }
+}
+
+@media screen and (max-width:768px) {
+    html {
+        font-size: 50%;
+    }
+    .nav_bar {
+        width: 100%;
+        height: 80px;
+    }
+
+    .heading {
+        font-size: 3.5rem;
+
+    }
+}
+
+@media screen and (max-width:500px) {
+    html {
+        font-size: 45%;
+    }
+
+    .nav_bar {
+        width: 100%;
+        height: 60px;
+    }
+
+    .heading {
+        font-size: 3rem;
+
+    }
+    .floating-contact-form .field-container i{
+        top:18px;
+    }
+    .floating-contact-form .field-container label{
+        top:17px;
+    }
+}
+
+@media screen and (max-width:380px) {
+    html {
+        font-size: 40%;
+    }
+    .nav_bar {
+        width: 100%;
+        height: 60px;
+    }
+
+    .heading {
+        font-size: 3rem;
+
+    }
+
+}
+
+
+/* responsive code above */

@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AXOCEAN</title>
+  <link rel="stylesheet" href="stylesheet.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous"/>
+
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+</head>
+
+<body style="background-image: url(whitewall2-min.jpg);">
+  <!-- header -->
+  <header>
+    <div id="preloader"></div>
+    <div class="nav_bar">
+      <!-- Home button -->
+      <button class="btn"><a class="fa fa-home" href="index.html"></a></button>
+    
+      <!-- heading  -->
+      <div class="heading">AXOCEAN</div>
+      <!-- transparent button in navbar grid -->
+      <!-- dropdown list code below -->
+      <div class="dropdown">
+        <button class="dropbtn">oo</button>
+
+      </div>
+      <!-- dropdown list code above -->
+
+
+    </div>
+
+
+  </header>
+  <!-- header ends -->
+
+
+  <main>
+
+  <!-- Animation slider -->
+  <div class="sliderdiv">
+    <div class="slider_main_div"></div>
+  </div>
+  <!-- Animation slider ends -->
+
+
+  <!-- products heading -->
+  <div class="productmain">
+    <div class="productheading_div">
+      <article>PRODUCTS</article>
+    </div>
+  </div>
+
+
+  <!-- main products -->
+  <div class="mainbody">
+    <div class="items item-1">
+      <h1>ITEM</h1>
+      <img src="sample1.jpg" alt="">
+      <h3>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consectetur, deleniti!</h3>
+      <a href="axoceanpage2.html"><button>SEE DETAILS</button></a>
+    </div>
+    <div class="items item-2">
+      <h1>ITEM</h1>
+      <img src="sample2.jpg" alt="">
+      <h3>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consectetur, deleniti!</h3>
+      <a href="axoceanpage2.html"><button>SEE DETAILS</button></a>
+    </div>
+    <div class="items item-3">
+      <h1>ITEM</h1>
+      <img src="sample3.jpg" alt="">
+      <h3>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consectetur, deleniti!</h3>
+      <a href="axoceanpage2.html"><button>SEE DETAILS</button></a>
+    </div>
+    <div class="items item-4">
+      <h1>ITEM</h1>
+      <img src="sample4.jpg" alt="">
+      <h3>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consectetur, deleniti!</h3>
+      <a href="axoceanpage2.html"><button>SEE DETAILS</button></a>
+    </div>
+   
+  </div>
+  
+</main>
+
+  <footer>
+    <div class="footercontainer">
+    <h3 class="websiteheading">AXOCEAN</h3>
+    <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia adipisci quasi saepe laborum nisi rem laboriosam</p>
+    <ul class="socialmedialogos">
+     
+      <li><a  class="fab fa-instagram" id="instagram" href="#"></a></li>
+      <li><a class="fab fa-pinterest-p"id="pinterest"href="#"></a></li>
+      <li><a class="fab fa-facebook-f" id="facebook"href="#"></a></li>
+
+    </ul>
+    <!-- floating form -->
+    <div   class=" floating-contact-form">
+      <div class="form-container">
+        <h3>We'd love to hear from you</h3>
+
+        <form action="#">
+          <div class="field-container">
+            <i class="fas fa-signature" id="nameicon"></i>
+            <label for="name">Name</label>
+            <input class="form-input" type="text" id="name" placeholder="Name"/>
+          </div>
+
+          <div class="field-container">
+            <i class="fas fa-envelope " id="emailicon"></i>
+            <label for="email">Email</label>
+            <input class="form-input" type="text" id="email" placeholder="Email Address" />
+          </div>
+
+          <div class="field-container">
+            <i class="far fa-sticky-note" id="messageicon" ></i>
+            <label for="message">Message</label>
+            <textarea
+              class="form-input"
+              id="message"
+              cols="30"
+              rows="10"
+              placeholder="Write Your Message Here..."
+            ></textarea>
+          </div>
+
+          <input type="submit" value="Send" />
+        </form>
+      </div>
+
+      <div class="contact-icon">
+        <i class="fas fa-comments"></i>
+      </div>
+    </div>
+    <!--  floating form ends here -->
+      <!-- <a class="contact" href="">ContactUs</a>  -->
+  
+    </div>
+    <div class="footerbottom">
+      <p>copyright &copy; 2022 <span>AXOCEAN</span> </p>
+    </div>
+
+  </footer>
+  <!-- script -->
+  <script>
+
+    // preloader script
+    var loader = document.getElementById("preloader");
+    window.addEventListener("load", function () {
+      loader.style.display = "none";
+    })
+
+
+
+
+    // foating form
+    const formInputs = document.querySelectorAll(
+  ".floating-contact-form .form-container .form-input"
+);
+
+const contactIcon = document.querySelector(
+  ".floating-contact-form .contact-icon"
+);
+
+const formContainer = document.querySelector(
+  ".floating-contact-form .form-container"
+);
+
+contactIcon.addEventListener("click", () => {
+  formContainer.classList.toggle("active");
+});
+
+formInputs.forEach((i) => {
+  i.addEventListener("focus", () => {
+    i.previousElementSibling.classList.add("active");
+  });
+});
+
+formInputs.forEach((i) => {
+  i.addEventListener("blur", () => {
+    if (i.value === "") {
+      i.previousElementSibling.classList.remove("active");
+    }
+  });
+});
+  </script>
+
+</body>
+
+</html>
