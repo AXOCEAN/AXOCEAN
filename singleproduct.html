@@ -163,6 +163,14 @@ contactIcon.addEventListener("click", () => {
   formContainer.classList.toggle("active");
 });
 
+window.addEventListener("click", (e) => {
+  if (!formContainer.classList.contains("active")) return;
+  if (e.target.matches(".floating-contact-form *")
+    || e.target.matches(".floating-contact-form .contact-icon *")
+  ) return;
+  formContainer.classList.toggle("active");
+});
+
 formInputs.forEach((i) => {
   i.addEventListener("focus", () => {
     i.previousElementSibling.classList.add("active");
