@@ -4,7 +4,21 @@
     margin: 0px ;
     box-sizing: border-box;
 }
+*::selection{
+   background-color: transparent;
+}
+*::-moz-selection{
+    background: transparent;
+}
+*{
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select:none;
+    user-select: none;
+
+}
 html {
+
     font-size: 62.5%;
 }
 body{
