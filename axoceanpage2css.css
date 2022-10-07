@@ -8,12 +8,14 @@ html {
     font-size: 62.5%;
 }
 body{
-    height: 100vh;
+    
     width: 100%;
-   background-size: cover;
+  
    margin-top: 100px;
    background-color: #8EC5FC;
-background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
+   background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
+   
+   
 
    
 }
@@ -115,9 +117,10 @@ background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
 .designscontainer{
     display: flex;
     flex-wrap: wrap;
+   
     align-items: center;
-    justify-content: space-around;
-    
+   
+    justify-content: center;
     
 
 }
@@ -140,7 +143,7 @@ background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
     align-items: center;
     text-align: center;
 
-    /* margin: 10px; */
+    margin: 30px;
     
     margin-bottom: 20px;
     
@@ -152,6 +155,7 @@ background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
 .design h1 {
   /* for product heading */
   background-color: #ddd;
+  color: black;
   width: 100%;
   height: 50px;
   text-align: center;
@@ -183,23 +187,15 @@ background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
     font-size: 1.5rem;
 }
 
-.design a {
-    /* for product see deails href */
-    background: transparent;
+.design-a-tag {
     text-decoration: none;
-    width: 100%;
-    border: none;
-    border-bottom-left-radius: 20px;
-    border-bottom-right-radius: 20px;
-
-
-
 }
 
-.design a button {
+.design  button {
     /* see details href button */
     display: flex;
-    background-color: white;
+    background-color: #ddd;
+ 
     align-items: center;
     justify-content: center;
     height: 50px;
