@@ -34,7 +34,7 @@
   </div>
 </header>
 
-<body style="background-image: url(whitewall2-min.jpg);">
+<body>
 
   <div class="maincontainer">
     <h1 class="designsheading">Designs</h1>
@@ -179,7 +179,7 @@
     contactIcon.addEventListener("click", () => {
       formContainer.classList.toggle("active");
     });
-    
+
     window.addEventListener("click", (e) => {
   if (!formContainer.classList.contains("active")) return;
   if (e.target.matches(".floating-contact-form *")
