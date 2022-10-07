@@ -93,7 +93,7 @@ body{
     backdrop-filter: blur(2.5px);
   margin-top: 80px ;
   margin-bottom: 80px;
-  
+ 
   border-radius: 50px;
     
     
@@ -119,14 +119,12 @@ body{
     flex-wrap: wrap;
    
     align-items: center;
-   
-    justify-content: center;
+  
+    justify-content:space-around;
     
 
 }
-.designscontainer::-webkit-scrollbar{
-   width: 0;
-}
+
 
 
 
@@ -135,7 +133,11 @@ body{
 
     height: 500px;
     backdrop-filter: blur(2px);
-    background-color: rgba(54, 53, 53, 0.496);
+
+    
+    
+    
+    
     border-radius: 20px;
     display: flex;
     flex-direction: column;
@@ -146,7 +148,7 @@ body{
     margin: 30px;
     
     margin-bottom: 20px;
-    
+    /* box-shadow: 1px 5px 10px rgba(0, 0, 0, 0.14); */
 
 
 } 
