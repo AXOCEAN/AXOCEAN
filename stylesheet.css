@@ -11,7 +11,9 @@ html {
 }
 
 body {
+    /* height: 100vh; */
     width: 100%;
+    /* background-size: cover; */
   
     margin-top: 80px;  background-color: #8EC5FC;
     background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
@@ -78,7 +80,11 @@ body {
 /* for AXOCEAN heading */
 .heading {
     font-size: 3rem;
-    color: black;
+    /* color: black; */
+   
+    background: -webkit-linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     cursor: pointer;
     font-family: Whitney, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
     -webkit-font-smoothing: antialiased;
@@ -86,6 +92,7 @@ body {
     align-self: center;
     
 }
+
 
 /* Dropdown Button */
 .dropbtn {
@@ -286,8 +293,9 @@ body {
 
   /* footercode starts from here */
 footer{
-    background-color: rgb(74, 74, 74);
-   
+    /* background-color: rgb(74, 74, 74); */
+ background-color: #02040645;
+    
     height: auto;
     width: 100%;
     font-family: "Open Sans";
@@ -399,7 +407,11 @@ color: rgb(123, 123, 254) ;
 } */
 
 .footerbottom{
-    background-color:rgba(162, 154, 154, 0.375);
+    /* background-color:rgba(162, 154, 154, 0.375); */
+ 
+   background-color: #02040645;
+   
+    
     width: 100%;
     padding: 20px 0;
     text-align: center;
