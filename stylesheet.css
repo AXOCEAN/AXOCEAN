@@ -11,13 +11,17 @@ html {
 }
 
 body {
-    /* height: 100vh; */
+    height: 100vh;
     width: 100%;
-    /* background-size: cover; */
+    background-image: url(whitewall2-min.jpg);
+    background-size: cover;
   
-    margin-top: 80px;  background-color: #8EC5FC;
-    background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
+     margin-top: 80px; 
+     
     
+    /* background-color: #8EC5FC;
+    background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%); */
+  
     
 
 } 
@@ -28,7 +32,7 @@ body {
     height: 100vh;
     width: 100%;
     position: fixed;
-    z-index: 100;
+    z-index: 9999;
 
 }
 
@@ -80,11 +84,7 @@ body {
 /* for AXOCEAN heading */
 .heading {
     font-size: 3rem;
-    /* color: black; */
-   
-    background: -webkit-linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    color: black; 
     cursor: pointer;
     font-family: Whitney, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
     -webkit-font-smoothing: antialiased;
@@ -97,16 +97,88 @@ body {
 /* Dropdown Button */
 .dropbtn {
     background-color: transparent;
-    color: transparent;
+    /* color: black; */
     padding: 12px 16px;
-    font-size: 2.5rem;
-    font-family: Whitney, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
-    -webkit-font-smoothing: antialiased;
-    font-weight: bold;
+    /* font-size: 2.5rem; */
+    /* font-family: Whitney, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif; */
+    /* -webkit-font-smoothing: antialiased; */
+    /* font-weight: bold; */
     border: none;
+    transition-duration: .3s;
+  
+}
+.dropbtn span{
+   font-size: 2rem;
+   /* font-weight: bolder; */
+  
+  
+}
+
+.rotate{
+    transform: rotate(90deg);
     
 }
 
+.dropdownlist{
+    /* background-color: white;*/
+     background-color: rgba(254, 254, 254, 0.793);
+    width: 100%;
+    height: 200px;
+    display: none;
+    padding-top: 10px;
+    text-align: center;
+    animation: dropdownlist .2s linear;
+
+
+}
+@keyframes dropdownlist{
+    0%{
+       width: 0;
+    }
+}
+.link1{
+    animation: dropdownlink .2s linear;
+}
+.link2{
+    animation: dropdownlink .3s linear;
+}
+.link3{
+    animation: dropdownlink .4s linear;
+}
+.link4{
+    animation: dropdownlink .5s linear;
+}
+@keyframes dropdownlink{
+    0%{
+       margin-left: -300px;
+    }
+}
+.dropdownlist a {
+    display: block;
+    font-size: 2rem;
+    text-decoration: none;
+     color: black;
+     font-weight: bolder;
+     font-family: Whitney, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif; 
+     /* border-bottom: 2px solid rgb(232, 232, 232); */
+     padding: 10px;
+   
+     transition-duration: .2s;
+}
+
+
+.show{
+    display: block;
+}
+.dropdownlist a:hover{
+    color: #009da5;
+    /* box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.114) ; */
+    letter-spacing: 5px;
+}
+.dropbtn:hover{
+    color: #E0C3FC;
+    
+}
 /* ------------------------------------------------------------------------------------------------- */
 
 /* animation slider code below */
@@ -118,11 +190,6 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-   
-    
-    
-
-
 }
 
 .slider_main_div {
@@ -166,11 +233,9 @@ body {
 /* product heading blured background below*/
 .productheading_div {
     background-color: rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(1px);
+    backdrop-filter: blur(0px);
     height: 7rem;
-  
-
-    box-shadow: 0px 8px 10px rgba(128, 128, 128, 0.626);
+    box-shadow: 0px 8px 10px rgba(128, 128, 128, 0.334);
     width: 30rem;
     display: flex;
     flex-direction: column;
@@ -207,7 +272,9 @@ body {
 
     height: 500px;
     backdrop-filter: blur(2px);
-    background-color: rgba(54, 53, 53, 0.496);
+    
+    background-color: rgba(80, 79, 79, 0.182);
+    /* background:linear-gradient(#09203f42,#53789500); */
     border-radius: 20px;
     display: flex;
     flex-direction: column;
@@ -221,7 +288,7 @@ body {
 
 }
 
-.items h1 {
+ .items h1 {
     /* for product heading */
     background-color: #ddd;
     color: black;
@@ -229,7 +296,7 @@ body {
     height: 50px;
     text-align: center;
     border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
+    border-top-right-radius: 20px;     
     display: flex;
     align-items: center;
     justify-content: center;
@@ -237,7 +304,13 @@ body {
     -webkit-font-smoothing: antialiased;
     font-weight: bold;
 
-}
+
+
+
+
+
+
+} 
 
 .items img {
     /* for product images */
@@ -263,23 +336,29 @@ body {
     /* see details href button */
     display: flex;
     background-color: #ddd;
- 
     align-items: center;
     justify-content: center;
     height: 50px;
-    width: 100%;
+    width: 100%;        
     cursor: pointer;
     text-decoration: none;
     color: black;
     border: none;
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
-
     font-size: 1.5rem;
     font-family: Whitney, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
     -webkit-font-smoothing: antialiased;
     font-weight: bold;
+
+
+
+  
+   
+
+
 }
+
 
 .items:hover {
     /* products flex hover  */
@@ -294,13 +373,16 @@ body {
   /* footercode starts from here */
 footer{
     /* background-color: rgb(74, 74, 74); */
- background-color: #02040645;
-    
+ background-color: #323232;
+      /* background-color: #8ec5fc05;
+    background-image: linear-gradient(62deg, #8ec5fc 0%, #e0c3fc 100%);  */
+ 
     height: auto;
     width: 100%;
-    font-family: "Open Sans";
+   
     padding-top: 40px;
     color: #fff;
+    
 
 
 }
@@ -318,6 +400,8 @@ footer{
     text-transform: capitalize;
     line-height: 3rem;
     margin: 0rem 0 1rem 0;
+    font-family: Whitney, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+    font-weight: bolder;
 
 
 }
@@ -327,9 +411,10 @@ footer{
     line-height:28px;
     font-size: 12px;
     text-align: center;
-    color: rgba(221, 221, 221, 0.728);
+    color: rgb(190, 190, 190);
     margin: 0rem 0 1rem 0;
-    
+    font-family: Whitney, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+   
 
 }
 
@@ -359,9 +444,11 @@ footer{
 .socialmedialogos a {
 font-size: 4rem;
 
+
 }
 #instgram{
     transition: color .2s ease;
+    
 }
 #instagram:hover{
 color: #e41da2 ; 
@@ -411,7 +498,7 @@ color: rgb(123, 123, 254) ;
  
    background-color: #02040645;
    
-    
+    /* background-color: rgb(166, 166, 166); */
     width: 100%;
     padding: 20px 0;
     text-align: center;
@@ -677,6 +764,14 @@ color: rgb(123, 123, 254) ;
 }
 
 @media screen and (max-width:998px) {
+
+    body{
+        margin-top: 60px;
+    }
+
+    .dropdownlist{
+        height: 180px;
+    }
     html {
         font-size: 55%;
 

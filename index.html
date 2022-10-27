@@ -29,9 +29,14 @@
       <!-- transparent button in navbar grid -->
       <!-- dropdown list code below -->
       <div class="dropdown">
-        <button class="dropbtn">oo</button>
-
+        <button class="dropbtn" onclick="myFunction()" id="rotatebtn">
+        <span class="span1">|</span>
+        <span>|</span>
+        <span class="span3">|</span>
+      </button>
+       
       </div>
+
       <!-- dropdown list code above -->
 
 
@@ -40,7 +45,16 @@
 
   </header>
   <!-- header ends -->
+<!-- dropdown list code here -->
 
+<div class="dropdownlist" id="ddlist">
+  <a href="" class="dropdownlink link1">PRODUCTS</a>
+  <a href="" class="dropdownlink link2">SPECIAL</a>
+  <a href="" class="dropdownlink link3">ABOUT</a>
+  <a href="" class="dropdownlink link4">GO TO FLIPKART</a>
+</div>
+
+<!-- dropdown list code ends here -->
 
   <main>
 
@@ -62,9 +76,9 @@
   <!-- main products -->
   <div class="mainbody">
     
-      <a class="item-a-tag" href="axoceanpage2.html" >
+      <a id="itematag" class="item-a-tag" href="axoceanpage2.html" >
         <div class="items item-1">
-      <h1>ITEM</h1>
+      <h1>Clips</h1>
       <img src="sample1.jpg" alt="">
       <h3>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consectetur, deleniti!</h3>
       <!-- <a href="axoceanpage2.html" > --><button>SEE DETAILS</button>  </div>
@@ -72,7 +86,7 @@
    
       <a class="item-a-tag" href="axoceanpage2.html" >
     <div class="items item-2">
-      <h1>ITEM</h1>
+      <h1>Scrunchies</h1>
       <img src="sample2.jpg" alt="">
       <h3>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consectetur, deleniti!</h3>
       <button>SEE DETAILS</button>
@@ -81,7 +95,8 @@
 
     <a class="item-a-tag" href="axoceanpage2.html" >
     <div class="items item-3">
-      <h1>ITEM</h1>
+      <h1>Headbands
+      </h1>
       <img src="sample3.jpg" alt="">
       <h3>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consectetur, deleniti!</h3>
      <button>SEE DETAILS</button>  </div>
@@ -90,7 +105,7 @@
 
     <a class="item-a-tag" href="axoceanpage2.html" >
     <div class="items item-4">
-      <h1>ITEM</h1>
+      <h1>Bow Clips</h1>
       <img src="sample4.jpg" alt="">
       <h3>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consectetur, deleniti!</h3>
       <button>SEE DETAILS</button>
@@ -190,13 +205,16 @@ contactIcon.addEventListener("click", () => {
   formContainer.classList.toggle("active");
 });
 
+let DisableTag = document.getElementById('itematag')
 window.addEventListener("click", (e) => {
   if (!formContainer.classList.contains("active")) return;
   if (e.target.matches(".floating-contact-form *")
     || e.target.matches(".floating-contact-form .contact-icon *")
   ) return;
   formContainer.classList.toggle("active");
+ DisableTag.disabled = true;
 });
+
 
 formInputs.forEach((i) => {
   i.addEventListener("focus", () => {
@@ -209,8 +227,13 @@ formInputs.forEach((i) => {
     if (i.value === "") {
       i.previousElementSibling.classList.remove("active");
     }
-  });
-});
+  }); 
+}); 
+
+function myFunction(){
+  document.getElementById("ddlist").classList.toggle("show")
+  document.getElementById("rotatebtn").classList.toggle("rotate")
+}
   </script>
 
 </body>
