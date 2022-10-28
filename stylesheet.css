@@ -11,7 +11,7 @@ html {
 }
 
 body {
-    height: 100vh;
+   /* height: 100vh;*/
     width: 100%;
     background-image: url(whitewall2-min.jpg);
     background-size: cover;
