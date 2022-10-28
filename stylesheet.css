@@ -258,7 +258,7 @@ body {
 .mainbody {
     
     display: flex;
-    min-height: 100%;
+    min-height:1350px;
     width: 100%;
     align-items: center;
     justify-content: space-around;
