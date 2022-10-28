@@ -258,7 +258,7 @@ body {
 .mainbody {
     
     display: flex;
-    max-height: 10000px;
+    min-height: 800px;
     width: 100%;
     align-items: center;
     justify-content: space-around;
