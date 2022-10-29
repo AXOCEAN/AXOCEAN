@@ -15,10 +15,7 @@ body {
     width: 100%;
     background-image: url(whitewall2-min.jpg);
     background-size: cover;
-    scroll-behavior:smooth;
      margin-top: 80px; 
-     
-    
     /* background-color: #8EC5FC;
     background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%); */
   
@@ -258,7 +255,7 @@ body {
 .mainbody {
     
     display: flex;
-    min-height:1350px;
+    min-height:100%;
     width: 100%;
     align-items: center;
     justify-content: space-around;
