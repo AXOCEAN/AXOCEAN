@@ -15,7 +15,7 @@ body {
     width: 100%;
     background-image: url(whitewall2-min.jpg);
     background-size: cover;
-  
+    scroll-behavior:smooth;
      margin-top: 80px; 
      
     
