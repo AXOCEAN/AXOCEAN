@@ -571,11 +571,16 @@ color: rgb(101, 160, 255) ;
   .floating-contact-form .contact-icon i:hover {
     transform: scale(1.1);
   }
+  .floating-contact-form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
   
   .floating-contact-form .form-container {
     position: fixed;
-    bottom: 60px;
-    right: 45px;
+    bottom: 60px; 
+   /* right: 45px; */
     
     background-color: rgba(255, 255, 255, 0.168);
     backdrop-filter: blur(5px);
@@ -764,6 +769,7 @@ color: rgb(101, 160, 255) ;
 
 
     }
+  
 }
 
 @media screen and (max-width:1200px) {
@@ -840,6 +846,7 @@ color: rgb(101, 160, 255) ;
         height: 234px;
 
     }
+  
 
 }
 
@@ -910,6 +917,8 @@ color: rgb(101, 160, 255) ;
     .floating-contact-form .field-container label{
         top:17px;
     }
+   
+     
 
 }
 
