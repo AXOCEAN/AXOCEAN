@@ -123,11 +123,10 @@
         // code for Theme Color or Dark mode or LIght mode
       function appearanceMOde(){
         if(document.getElementById('switch').checked == false){
-        // body
-        document.body.style.backgroundColor ="#f3f8ea";
+       
           // navbar
-          // document.getElementById("navbar").style.backgroundColor = " rgba(254, 254, 254, 0.896)";
-         document.getElementById("navbar").style.backgroundColor =  "#b6c790";
+         
+         document.getElementById("navbar").style.backgroundColor =  "#fff";
           document.getElementById("navbar").style.boxShadow = " 0px 0px 10px 0.1px gray";
       
           document.getElementById("heading").style.color = "black";
@@ -144,23 +143,23 @@
           document.getElementById("homebtn").style.color = "black";
       
           // items h1 and button 
-          document.getElementById("item1-h1").style.backgroundColor = "#e6dfc6";
-          document.getElementById("item1-button").style.backgroundColor = "#e6dfc6";
+          document.getElementById("item1-h1").style.backgroundColor = "#ddd";
+          document.getElementById("item1-button").style.backgroundColor = "#ddd";
           document.getElementById("item1-h1").style.color = "black";
           document.getElementById("item1-button").style.color = "black";
       
-          document.getElementById("item2-h1").style.backgroundColor = "#e6dfc6";
-          document.getElementById("item2-button").style.backgroundColor = "#e6dfc6";
+          document.getElementById("item2-h1").style.backgroundColor = "#ddd";
+          document.getElementById("item2-button").style.backgroundColor = "#ddd";
           document.getElementById("item2-h1").style.color = "black";
           document.getElementById("item2-button").style.color = "black";
       
-          document.getElementById("item3-h1").style.backgroundColor = "#e6dfc6";
-          document.getElementById("item3-button").style.backgroundColor = "#e6dfc6";
+          document.getElementById("item3-h1").style.backgroundColor = "#ddd";
+          document.getElementById("item3-button").style.backgroundColor = "#ddd";
           document.getElementById("item3-h1").style.color = "black";
           document.getElementById("item3-button").style.color = "black";
       
-          document.getElementById("item4-h1").style.backgroundColor = "#e6dfc6";
-          document.getElementById("item4-button").style.backgroundColor = "#e6dfc6";
+          document.getElementById("item4-h1").style.backgroundColor = "#ddd";
+          document.getElementById("item4-button").style.backgroundColor = "#ddd";
           document.getElementById("item4-h1").style.color = "black";
           document.getElementById("item4-button").style.color = "black";
 
@@ -180,6 +179,9 @@
            document.getElementById("dropdownlistlink2").style.color = "black";
            document.getElementById("dropdownlistlink3").style.color = "black";
            document.getElementById("dropdownlistlink4").style.color = "black";
+
+           // footer
+          document.getElementById("footer").style.backgroundColor = "#2e3032";
 
         //    floating form
 
@@ -250,7 +252,8 @@
            document.getElementById("dropdownlistlink4").style.color = "white";
         //    document.getElementById("dropdownlistlink4").style. = "#009da5";
 
-
+          // footer
+          document.getElementById("footer").style.backgroundColor = "black";
 
         // floating form
         document.getElementById("name").style.backgroundColor = "black";
