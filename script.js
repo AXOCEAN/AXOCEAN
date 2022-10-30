@@ -107,6 +107,19 @@
 
         // Code Of Mouse hover on dropdown list links ends here ----->
 
+        // Code of hamburger hover effects starts from here
+       function hamburgerMouseOver(){
+        document.getElementById("hamburger").style.color = "#0fa7c6";
+       }
+       function hamburgerMouseOut(){
+        if(document.getElementById('switch').checked == false){
+        document.getElementById("hamburger").style.color = "black";
+       }
+       else{
+        document.getElementById("hamburger").style.color = "white";
+      }
+      }
+
         // code for Theme Color or Dark mode or LIght mode
       function appearanceMOde(){
         if(document.getElementById('switch').checked == false){
@@ -117,11 +130,14 @@
           document.getElementById("navbar").style.boxShadow = " 0px 0px 10px 0.1px gray";
       
           document.getElementById("heading").style.color = "black";
-             
-          // hamburger lines
-          document.getElementById("hamburgerline1").style.color = "black";
-          document.getElementById("hamburgerline2").style.color = "black";
-          document.getElementById("hamburgerline3").style.color = "black";
+          
+          
+          
+          //  hamburger lines
+          // document.getElementById("hamburgerline1").style.color = "black";
+          // document.getElementById("hamburgerline2").style.color = "black";
+          // document.getElementById("hamburgerline3").style.color = "black";
+          document.getElementById("hamburger").style.color = "black";
       
           // homebutton
           document.getElementById("homebtn").style.color = "black";
@@ -175,6 +191,8 @@
         }
 
         else {
+        
+
           // navbar
           document.getElementById("navbar").style.backgroundColor = "black";
           document.getElementById("heading").style.color = "white";
@@ -182,9 +200,10 @@
       
       
           // hamburger lines
-          document.getElementById("hamburgerline1").style.color = "white";
-          document.getElementById("hamburgerline2").style.color = "white";
-          document.getElementById("hamburgerline3").style.color = "white";
+          // document.getElementById("hamburgerline1").style.color = "white";
+          // document.getElementById("hamburgerline2").style.color = "white";
+          // document.getElementById("fas").style.color = "white";
+          document.getElementById("hamburger").style.color = "white";
       
       
       
