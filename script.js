@@ -115,7 +115,7 @@
         if(document.getElementById('switch').checked == false){
         document.getElementById("hamburger").style.color = "black";
        }
-       else{
+       else{   
         document.getElementById("hamburger").style.color = "white";
       }
       }
@@ -123,10 +123,11 @@
         // code for Theme Color or Dark mode or LIght mode
       function appearanceMOde(){
         if(document.getElementById('switch').checked == false){
-        
+        // body
+        document.body.style.backgroundColor ="#f3f8ea";
           // navbar
           // document.getElementById("navbar").style.backgroundColor = " rgba(254, 254, 254, 0.896)";
-         document.getElementById("navbar").style.backgroundColor =  "#d8e3e9";
+         document.getElementById("navbar").style.backgroundColor =  "#b6c790";
           document.getElementById("navbar").style.boxShadow = " 0px 0px 10px 0.1px gray";
       
           document.getElementById("heading").style.color = "black";
@@ -143,23 +144,23 @@
           document.getElementById("homebtn").style.color = "black";
       
           // items h1 and button 
-          document.getElementById("item1-h1").style.backgroundColor = "#6e8286";
-          document.getElementById("item1-button").style.backgroundColor = "#6e8286";
+          document.getElementById("item1-h1").style.backgroundColor = "#e6dfc6";
+          document.getElementById("item1-button").style.backgroundColor = "#e6dfc6";
           document.getElementById("item1-h1").style.color = "black";
           document.getElementById("item1-button").style.color = "black";
       
-          document.getElementById("item2-h1").style.backgroundColor = "#6e8286";
-          document.getElementById("item2-button").style.backgroundColor = "#6e8286";
+          document.getElementById("item2-h1").style.backgroundColor = "#e6dfc6";
+          document.getElementById("item2-button").style.backgroundColor = "#e6dfc6";
           document.getElementById("item2-h1").style.color = "black";
           document.getElementById("item2-button").style.color = "black";
       
-          document.getElementById("item3-h1").style.backgroundColor = "#6e8286";
-          document.getElementById("item3-button").style.backgroundColor = "#6e8286";
+          document.getElementById("item3-h1").style.backgroundColor = "#e6dfc6";
+          document.getElementById("item3-button").style.backgroundColor = "#e6dfc6";
           document.getElementById("item3-h1").style.color = "black";
           document.getElementById("item3-button").style.color = "black";
       
-          document.getElementById("item4-h1").style.backgroundColor = "#6e8286";
-          document.getElementById("item4-button").style.backgroundColor = "#6e8286";
+          document.getElementById("item4-h1").style.backgroundColor = "#e6dfc6";
+          document.getElementById("item4-button").style.backgroundColor = "#e6dfc6";
           document.getElementById("item4-h1").style.color = "black";
           document.getElementById("item4-button").style.color = "black";
 
@@ -191,10 +192,11 @@
         }
 
         else {
-        
+        // BODY 
+        document.body.style.backgroundColor = "#474d4f";
 
           // navbar
-          document.getElementById("navbar").style.backgroundColor = "black";
+          document.getElementById("navbar").style.backgroundColor = "#0B0C10";
           document.getElementById("heading").style.color = "white";
           document.getElementById("navbar").style.boxShadow = " 0px 0px 10px 0.1px black";
       
