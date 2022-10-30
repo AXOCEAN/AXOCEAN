@@ -110,14 +110,21 @@
         // code for Theme Color or Dark mode or LIght mode
       function appearanceMOde(){
         if(document.getElementById('switch').checked == false){
-      
+        
           // navbar
           // document.getElementById("navbar").style.backgroundColor = " rgba(254, 254, 254, 0.896)";
          document.getElementById("navbar").style.backgroundColor =  "#d8e3e9";
           document.getElementById("navbar").style.boxShadow = " 0px 0px 10px 0.1px gray";
       
           document.getElementById("heading").style.color = "black";
-      
+          // daymode
+          document.getElementById("nightmode").style.display =
+          "none";
+
+          document.getElementById("daymode").style.display =
+          "block";
+          
+          
           // hamburger lines
           document.getElementById("hamburgerline1").style.color = "black";
           document.getElementById("hamburgerline2").style.color = "black";
@@ -175,7 +182,12 @@
         }
 
         else {
-      
+        // daymode
+        document.getElementById("daymode").style.display =
+        "none";
+        document.getElementById("nightmode").style.display =
+        "block";
+
           // navbar
           document.getElementById("navbar").style.backgroundColor = "black";
           document.getElementById("heading").style.color = "white";
