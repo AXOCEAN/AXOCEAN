@@ -444,32 +444,6 @@ body {
     right: 5px;
 
 }
-#daymode{
-    position: absolute;
-    font-size: 1rem;
-    font-weight: bolder;
-    color: black;
-    right: 10px;
-    width: fit-content;
-    height: 40px;
-    font-family: Whitney, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
-    padding: 14px 0px;
-   
-    text-align: center;
-  
-}
-#nightmode{
-    position: absolute;
-    font-size: 1rem;
-    font-weight: bolder;
-    color: white;
-    left: 10px;
-    height: 40px;
-    font-family: Whitney, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
-    padding: 14px 0px;
-    
-    
-}
 #switch{
     display: none;
 }
