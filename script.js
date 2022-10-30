@@ -123,7 +123,8 @@
         // code for Theme Color or Dark mode or LIght mode
       function appearanceMOde(){
         if(document.getElementById('switch').checked == false){
-       
+         // BODY 
+         document.body.style.backgroundImage = "url('whitewall2-min.jpg')";
           // navbar
          
          document.getElementById("navbar").style.backgroundColor =  "#fff";
@@ -195,7 +196,7 @@
 
         else {
         // BODY 
-        document.body.style.backgroundColor = "#474d4f";
+        document.body.style.backgroundImage = "url('whitewall2-mindark.jpg')";
 
           // navbar
           document.getElementById("navbar").style.backgroundColor = "#0B0C10";
