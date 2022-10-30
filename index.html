@@ -19,20 +19,20 @@
 <!-- <body style="background-image: url(whitewall2-min.jpg);"> -->
   <!-- header -->
   <header>
-    <div id="preloader"></div>
-    <div class="nav_bar">
+    <!-- <div id="preloader"></div> -->
+    <div class="nav_bar" id="navbar">
       <!-- Home button -->
-      <button class="btn"><a class="fa fa-home" href="index.html"></a></button>
+      <button class="btn"><a id="homebtn" class="fa fa-home" href="index.html"></a></button>
     
       <!-- heading  -->
-      <div class="heading">AXOCEAN</div>
+      <div class="heading" id="heading">AXOCEAN</div>
       <!-- transparent button in navbar grid -->
       <!-- dropdown list code below -->
       <div class="dropdown">
         <button class="dropbtn" onclick="myFunction()" id="rotatebtn">
-        <span class="span1">|</span>
-        <span>|</span>
-        <span class="span3">|</span>
+        <span id="hamburgerline1" class="span1">|</span>
+        <span id="hamburgerline2">|</span>
+        <span id="hamburgerline3" class="span3">|</span>
       </button>
        
       </div>
@@ -48,10 +48,10 @@
 <!-- dropdown list code here -->
 
 <div class="dropdownlist" id="ddlist">
-  <a href="" class="dropdownlink link1">PRODUCTS</a>
-  <a href="" class="dropdownlink link2">SPECIAL</a>
-  <a href="" class="dropdownlink link3">ABOUT</a>
-  <a href="" class="dropdownlink link4">GO TO FLIPKART</a>
+  <a href="" id="dropdownlistlink1" class="dropdownlink link1" onmouseover="hoverIn()" onmouseout="hoverOut()">PRODUCTS</a>
+  <a href="" id="dropdownlistlink2" class="dropdownlink link2" onmouseover="hoverIn2()" onmouseout="hoverOut2()">SPECIAL</a>
+  <a href="" id="dropdownlistlink3" class="dropdownlink link3" onmouseover="hoverIn3()" onmouseout="hoverOut3()">ABOUT</a>
+  <a href="" id="dropdownlistlink4" class="dropdownlink link4" onmouseover="hoverIn4()" onmouseout="hoverOut4()">GO TO FLIPKART</a>
 </div>
 
 <!-- dropdown list code ends here -->
@@ -60,7 +60,7 @@
 
   <!-- Animation slider -->
   <div class="sliderdiv">
-    <div class="slider_main_div"></div>
+    <div id="slidermaindiv" class="slider_main_div"></div>
   </div>
   <!-- Animation slider ends -->
 
@@ -77,43 +77,48 @@
   <div class="mainbody">
     
       <a id="itematag" class="item-a-tag" href="axoceanpage2.html" >
-        <div class="items item-1">
-      <h1>Clips</h1>
-      <img src="sample1.jpg" alt="">
-      <h3>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consectetur, deleniti!</h3>
-      <!-- <a href="axoceanpage2.html" > --><button>SEE DETAILS</button>  </div>
+        <div  id="item1container" class="items item-1">
+      <h1 id="item1-h1">Clips</h1>
+      <img src="sample1.jpg" alt="">  
+      <h3 id="item1-h3">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consectetur, deleniti!</h3>
+      <!-- <a href="axoceanpage2.html" > --><button id="item1-button">SEE DETAILS</button>  </div>
       </a> 
    
       <a class="item-a-tag" href="axoceanpage2.html" >
-    <div class="items item-2">
-      <h1>Scrunchies</h1>
+    <div id="item2container" class="items item-2">
+      <h1 id="item2-h1">Scrunchies</h1>
       <img src="sample2.jpg" alt="">
-      <h3>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consectetur, deleniti!</h3>
-      <button>SEE DETAILS</button>
+      <h3 id="item2-h3">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consectetur, deleniti!</h3>
+      <button id="item2-button">SEE DETAILS</button>
     </div></a>
     
 
     <a class="item-a-tag" href="axoceanpage2.html" >
-    <div class="items item-3">
-      <h1>Headbands
+    <div id="item3container" class="items item-3">
+      <h1 id="item3-h1">Headbands
       </h1>
       <img src="sample3.jpg" alt="">
-      <h3>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consectetur, deleniti!</h3>
-     <button>SEE DETAILS</button>  </div>
+      <h3 id="item3-h3">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consectetur, deleniti!</h3>
+     <button id="item3-button">SEE DETAILS</button>  </div>
     </a>
   
 
     <a class="item-a-tag" href="axoceanpage2.html" >
-    <div class="items item-4">
-      <h1>Bow Clips</h1>
+    <div id="item4container" class="items item-4">
+      <h1 id="item4-h1">Bow Clips</h1>
       <img src="sample4.jpg" alt="">
-      <h3>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consectetur, deleniti!</h3>
-      <button>SEE DETAILS</button>
+      <h3 id="item4-h3">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consectetur, deleniti!</h3>
+      <button id="item4-button">SEE DETAILS</button>
     </div></a>
     
-   
   </div>
-  
+  <div class="togglebuttoncontainer">
+   
+   
+    <input type="checkbox" id="switch" onclick="appearanceMOde()">
+    <label for="switch" id="label"></label>
+ 
+  </div>
 </main>
 
   <footer>
@@ -153,7 +158,7 @@
               class="form-input"
               id="message"
               cols="30"
-              rows="10"
+              rows="10" 
               placeholder="Write Your Message Here..."
               name="Message"
               required></textarea>
@@ -177,65 +182,9 @@
 
   </footer>
   <!-- script -->
-  <script>
-
-    // preloader script
-    var loader = document.getElementById("preloader");
-    window.addEventListener("load", function () {
-      loader.style.display = "none";
-    })
-
-
-
-
-    // foating form
-    const formInputs = document.querySelectorAll(
-  ".floating-contact-form .form-container .form-input"
-);
-
-const contactIcon = document.querySelector(
-  ".floating-contact-form .contact-icon"
-);
-
-const formContainer = document.querySelector(
-  ".floating-contact-form .form-container"
-);
-
-contactIcon.addEventListener("click", () => {
-  formContainer.classList.toggle("active");
-});
-
-let DisableTag = document.getElementById('itematag')
-window.addEventListener("click", (e) => {
-  if (!formContainer.classList.contains("active")) return;
-  if (e.target.matches(".floating-contact-form *")
-    || e.target.matches(".floating-contact-form .contact-icon *")
-  ) return;
-  formContainer.classList.toggle("active");
- DisableTag.disabled = true;
-});
-
-
-formInputs.forEach((i) => {
-  i.addEventListener("focus", () => {
-    i.previousElementSibling.classList.add("active");
-  });
-});
-
-formInputs.forEach((i) => {
-  i.addEventListener("blur", () => {
-    if (i.value === "") {
-      i.previousElementSibling.classList.remove("active");
-    }
-  }); 
-}); 
-
-function myFunction(){
-  document.getElementById("ddlist").classList.toggle("show")
-  document.getElementById("rotatebtn").classList.toggle("rotate")
-}
+  <script src="script.js">
   </script>
 
 </body>
 
-</html>
+</html>                       

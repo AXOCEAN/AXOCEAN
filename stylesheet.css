@@ -11,11 +11,15 @@ html {
 }
 
 body {
-   /* height: 100vh;*/
+    /* height: 100vh; */
     width: 100%;
-    background-image: url(whitewall2-min.jpg);
-    background-size: cover;
+    /* background-image: url(whitewall2-min.jpg); */
+    /* background-size: cover; */
+  scroll-behavior: smooth;
+  background-color: #cfd0d6;
      margin-top: 80px; 
+     
+    
     /* background-color: #8EC5FC;
     background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%); */
   
@@ -23,7 +27,7 @@ body {
 
 } 
 
-#preloader {
+/* #preloader {
     background: #FFFFFF url(preloadergif.gif) no-repeat center center;
     background-size: 20%;
     height: 100vh;
@@ -31,12 +35,15 @@ body {
     position: fixed;
     z-index: 9999;
 
-}
+} */
 
 .nav_bar {
    
     backdrop-filter: blur(5px);
-    background-color: rgba(254, 254, 254, 0.896);
+    /* background-color: rgba(254, 254, 254, 0.896); */
+    background-color: #425c87;
+    background-color: #d8e3e9;
+    /* background-color: #a5d4de; */
     position: fixed;
  top: 0;
     z-index: 98;
@@ -119,6 +126,7 @@ body {
 .dropdownlist{
     /* background-color: white;*/
      background-color: rgba(254, 254, 254, 0.793);
+    
     width: 100%;
     height: 200px;
     display: none;
@@ -168,7 +176,7 @@ body {
     display: block;
 }
 .dropdownlist a:hover{
-    color: #009da5;
+    /* color: #009da5; */
     /* box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.114) ; */
     letter-spacing: 5px;
 }
@@ -270,7 +278,8 @@ body {
     height: 500px;
     backdrop-filter: blur(2px);
     
-    background-color: rgba(80, 79, 79, 0.182);
+    background-color: rgba(80, 79, 79, 0.182);       /*light theme*/
+    /* background-color: rgba(0, 0, 0, 0.298);               */
     /* background:linear-gradient(#09203f42,#53789500); */
     border-radius: 20px;
     display: flex;
@@ -287,7 +296,9 @@ body {
 
  .items h1 {
     /* for product heading */
-    background-color: #ddd;
+    /* background-color: #ddd; */
+    background-color: #6e8286;
+    /* background-color: #1d242c; */
     color: black;
     width: 100%;
     height: 50px;
@@ -318,7 +329,7 @@ body {
 .items h3 {
     /* for product description */
 
-    color: rgb(218, 240, 255);
+    color: rgb(56, 56, 56);
     font-family: Whitney, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
     -webkit-font-smoothing: antialiased;
 
@@ -332,7 +343,9 @@ body {
 .items  button {
     /* see details href button */
     display: flex;
-    background-color: #ddd;
+    /* background-color: #ddd; */
+    background-color: #a5d4de;
+    background-color: #6e8286;
     align-items: center;
     justify-content: center;
     height: 50px;
@@ -366,13 +379,66 @@ body {
 
 
 }
+.togglebuttoncontainer{
+    
+    width:100%;
+    
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+
+   
+}
+/* .togglebuttoncontainer h1{
+    font-size:2rem;
+   color: black;
+   font-family: Whitney, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+   font-weight: bolder;
+} */
+
+#label{
+    position:relative;
+    width: 100px;
+    height: 40px;
+    background-color: white;
+    cursor: pointer;
+    border-radius: 50px;
+    transition-duration: .4s;
+    box-shadow: 0px 0px 10px rgb(119, 119, 119) inset;
+}
+
+#label::after{
+    position: absolute;
+    content: "";
+    height: 40px;
+    width: 40px;
+   
+    
+    background:conic-gradient(white,gray,white,gray,white);
+    border-radius: 50%;
+    transition-duration: .3s;
+    box-shadow: 0px 1px 5px black;
+}
+#switch{
+    display: none;
+}
+#switch:checked + #label{
+    background-color:gray;
+    box-shadow: 2px 2px 10px 1px rgb(7, 7, 7) inset;
+   
+}
+#switch:checked + #label::after{
+    transform: translate(60px);
+   
+}
 
   /* footercode starts from here */
 footer{
     /* background-color: rgb(74, 74, 74); */
  background-color: #323232;
-      /* background-color: #8ec5fc05;
-    background-image: linear-gradient(62deg, #8ec5fc 0%, #e0c3fc 100%);  */
+ background-color: #1d242c;
+  
  
     height: auto;
     width: 100%;
@@ -617,6 +683,7 @@ color: rgb(123, 123, 254) ;
   }
   ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
     color: rgba(88, 120, 163, 0.555);
+   
     font-size: 1.6rem;
     opacity: 1; /* Firefox */
   }
