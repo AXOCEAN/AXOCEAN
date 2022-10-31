@@ -2,55 +2,50 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+}
 
+*::selection {
+    background-color: transparent;
+}
+
+*::-moz-selection {
+    background: transparent;
+}
+
+* {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 
 }
-*::selection{
-    background-color: transparent;
- }
- *::-moz-selection{
-     background: transparent;
- 
- }
- *{
-     -webkit-user-select: none;
-     -moz-user-select: none;
-     -ms-user-select:none;
-     user-select: none;
- 
- }
- *{
-    -webkit-tap-highlight-color:transparent;
- }
+
+* {
+    -webkit-tap-highlight-color: transparent;
+}
+
 html {
     font-size: 62.5%;
 }
 
 body {
     width: 100%;
-  scroll-behavior: smooth;
-  /* background-color: #f3f4f9; */
-   /* background-color: #f3f8ea;  */
-   background-image: url(whitewall2-min.jpg);
-   background-size: cover;
-     margin-top: 80px; 
-    /* background-color: #8EC5FC;
-    background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%); */
-} 
+    scroll-behavior: smooth;
+    background-image: url(whitewall2-min.jpg);
+    background-size: cover;
+    margin-top: 80px;
+}
 
-/* #preloader {
+#preloader {
     background: #FFFFFF url(preloadergif.gif) no-repeat center center;
     background-size: 20%;
     height: 100vh;
     width: 100%;
     position: fixed;
     z-index: 9999;
-
-} */
+}
 
 .nav_bar {
-    /* background-color: #d8e3e9; */
-    /* background-color:#b6c790 ; */
     background-color: #fff;
     position: fixed;
     top: 0;
@@ -80,12 +75,10 @@ body {
 }
 
 .btn a {
-
     text-decoration: none;
     color: black;
     -webkit-font-smoothing: antialiased;
     font-weight: bold;
-
 }
 
 /* nav bar home button logo code above */
@@ -95,15 +88,16 @@ body {
 /* for AXOCEAN heading */
 .heading {
     font-size: 3rem;
-    color: black; 
+    color: black;
     cursor: pointer;
     font-family: Whitney, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
     -webkit-font-smoothing: antialiased;
     font-weight: bold;
     align-self: center;
-    
+
 }
-.fas{
+
+.fas {
     font-size: 2.5rem;
 }
 
@@ -111,95 +105,89 @@ body {
 /* Dropdown Button */
 .dropbtn {
     background-color: transparent;
-    /* color: black; */
     padding: 12px 16px;
-    /* font-size: 2.5rem; */
-    /* font-family: Whitney, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif; */
-    /* -webkit-font-smoothing: antialiased; */
-    /* font-weight: bold; */
     border: none;
     transition-duration: .3s;
-  
-}
-.dropbtn span{
-   font-size: 2rem;
-   /* font-weight: bolder; */
-  
-  
 }
 
-.rotate{
+.dropbtn span {
+    font-size: 2rem;
+}
+
+.rotate {
     transform: rotate(270deg);
-    
+
 }
 
-.dropdownlist{
-    /* background-color: white;*/
-     background-color: rgba(254, 254, 254, 0.793);
-    
+.dropdownlist {
+    background-color: rgba(254, 254, 254, 0.793);
     width: 100%;
     height: 200px;
     display: none;
     padding-top: 10px;
     text-align: center;
     animation: dropdownlist .2s linear;
-
-
 }
-@keyframes dropdownlist{
-    0%{
-       width: 0;
+
+@keyframes dropdownlist {
+    0% {
+        width: 0;
     }
 }
-.link1{
+
+.link1 {
     animation: dropdownlink .2s linear;
 }
-.link2{
+
+.link2 {
     animation: dropdownlink .3s linear;
 }
-.link3{
+
+.link3 {
     animation: dropdownlink .4s linear;
 }
-.link4{
+
+.link4 {
     animation: dropdownlink .5s linear;
 }
-@keyframes dropdownlink{
-    0%{
-       margin-left: -300px;
+
+@keyframes dropdownlink {
+    0% {
+        margin-left: -300px;
     }
 }
+
 .dropdownlist a {
     display: block;
     font-size: 2rem;
     text-decoration: none;
-     color: black;
-     font-weight: bolder;
-     font-family: Whitney, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif; 
-     /* border-bottom: 2px solid rgb(232, 232, 232); */
-     padding: 10px;
-   
-     transition-duration: .2s;
+    color: black;
+    font-weight: bolder;
+    font-family: Whitney, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+    padding: 10px;
+    transition-duration: .2s;
 }
 
 
-.show{
+.show {
     display: block;
 }
-.dropdownlist a:hover{
-    /* color: #009da5; */
-    /* box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.114) ; */
+
+.dropdownlist a:hover {
     letter-spacing: 5px;
 }
-.dropbtn:hover{
+
+.dropbtn:hover {
     color: #0fa7c6;
-    
+
 }
+
 /* ------------------------------------------------------------------------------------------------- */
 
 /* animation slider code below */
 
 .sliderdiv {
-  
+
     width: 100%;
     height: 500px;
     display: flex;
@@ -208,7 +196,7 @@ body {
 }
 
 .slider_main_div {
-    
+
     width: 1300px;
     height: 400px;
     background-image: url(scrunchiesslider.jpg);
@@ -223,10 +211,11 @@ body {
     0% {
         background-image: url(scrunchiesslider.jpg);
     }
+
     35% {
         background-image: url(scrunchies2slider.jpg);
     }
-    
+
     75% {
         background-image: url(scrunchies3slider.jpg);
     }
@@ -248,7 +237,6 @@ body {
 /* product heading blured background below*/
 .productheading_div {
     background-color: rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(0px);
     height: 7rem;
     box-shadow: 0px 8px 10px rgba(128, 128, 128, 0.334);
     width: 30rem;
@@ -273,7 +261,7 @@ body {
 /* main body OR Catalogue  code starts from here*/
 .mainbody {
     display: flex;
-    min-height:100%;
+    min-height: 100%;
     width: 100%;
     align-items: center;
     justify-content: space-around;
@@ -284,9 +272,9 @@ body {
 .items {
     width: 300px;
     height: 500px;
-     backdrop-filter: blur(2px);
-     background-color: #2f2f2f3e;
-     box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.142);
+    backdrop-filter: blur(2px);
+    background-color: #2f2f2f3e;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.142);
     border-radius: 20px;
     display: flex;
     flex-direction: column;
@@ -296,25 +284,22 @@ body {
     margin-bottom: 20px;
 }
 
- .items h1 {
+.items h1 {
     /* for product heading */
-    /* background-color: #6e8286; */
-    /* background-color: #e6dfc6;  */
-    background-color:#ddd ;
-
+    background-color: #ddd;
     color: black;
     width: 100%;
     height: 50px;
     text-align: center;
     border-top-left-radius: 20px;
-    border-top-right-radius: 20px;     
+    border-top-right-radius: 20px;
     display: flex;
     align-items: center;
     justify-content: center;
     font-family: Whitney, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
     -webkit-font-smoothing: antialiased;
     font-weight: bolder;
-} 
+}
 
 .items img {
     /* for product images */
@@ -325,6 +310,7 @@ body {
 .items h3 {
     /* for product description */
     color: rgb(56, 56, 56);
+
     font-family: Whitney, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
     -webkit-font-smoothing: antialiased;
     font-size: 1.5rem;
@@ -334,17 +320,14 @@ body {
     text-decoration: none;
 }
 
-.items  button {
+.items button {
     /* see details href button */
     display: flex;
-    /* background-color: #6e8286; */
-     /* background-color: #eae5d1;  */
-     background-color:#ddd ;
-  
+    background-color: #ddd;
     align-items: center;
     justify-content: center;
     height: 50px;
-    width: 100%;        
+    width: 100%;
     cursor: pointer;
     text-decoration: none;
     color: black;
@@ -363,75 +346,78 @@ body {
     transition-duration: 150ms;
     box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.355);
 }
-.togglebuttoncontainer{
-    width:100%;
+
+.togglebuttoncontainer {
+    width: 100%;
     height: 100px;
     display: flex;
     align-items: center;
-    justify-content:center;
+    justify-content: center;
 }
 
-#label{
-    position:relative;
+#label {
+    position: relative;
     width: 100px;
     height: 40px;
     background-color: white;
     cursor: pointer;
     border-radius: 50px;
     transition-duration: .5s;
-    box-shadow: 0px 0px 10px rgb(119, 119, 119) inset;
+    box-shadow: 0px 4px 10px rgb(119, 119, 119) inset;
 }
 
-#label::after{
+#label::after {
     position: absolute;
     content: "";
     height: 40px;
     width: 40px;
     background: url(daymode.png);
-   background-color: white;
+    background-color: white;
     background-size: contain;
     border-radius: 50%;
     transition-duration: .3s;
-    box-shadow: 0px 1px 5px black;
+    box-shadow: 0px 1px 6px black;
 }
-#label i{
+
+#label i {
     position: absolute;
     height: 40px;
     width: 40px;
     right: 5px;
 }
 
-#switch{
+#switch {
     display: none;
 }
-#switch:checked + #label{
-    background-color:rgb(52, 52, 52);
+
+#switch:checked+#label {
+    background-color: rgb(52, 52, 52);
     box-shadow: 2px 2px 10px 1px rgb(7, 7, 7) inset;
 }
-#switch:checked + #label::after{
-    transform: translate(60px) rotate(360deg);
+
+#switch:checked+#label::after {
+    transform: translate(60px);
     background-image: url(nightmode.png);
     background-color: black;
 }
-  /* footercode starts from here */
-footer{
+
+/* footercode starts from here */
+footer {
     background-color: #2e3032;
-    /* background-color: #7a6e55; */
-    /* background-color: #2c1e2e; */
     height: auto;
     width: 100%;
     padding-top: 40px;
     color: #fff;
 }
-.footercontainer{
+
+.footercontainer {
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction:column;
-/* background-color: red; */
-    
+    flex-direction: column;
 }
-.websiteheading{
+
+.websiteheading {
     font-size: 2.5rem;
     font-weight: 400;
     text-transform: capitalize;
@@ -442,113 +428,86 @@ footer{
 
 
 }
-.description{
-    /* max-width:500px; */
-    /* margin:10px auto; */
-    line-height:28px;
+
+.description {
+    line-height: 28px;
     font-size: 12px;
     text-align: center;
     color: rgb(190, 190, 190);
     margin: 0rem 0 1rem 0;
     font-family: Whitney, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
-   
+
 
 }
 
-.socialmedialogos{
-    
+.socialmedialogos {
+
     list-style: none;
     display: flex;
     align-items: center;
     justify-content: space-between;
     margin: 1rem 0 3rem 0;
-    /* background-color: red; */
     width: 200px;
-    
-    
 
-   
+
+
+
 
 }
-.socialmedialogos li{
+
+.socialmedialogos li {
     margin: 0 10px;
 }
-.socialmedialogos a{
+
+.socialmedialogos a {
     text-decoration: none;
     color: #fff;
-
 }
+
 .socialmedialogos a {
-font-size: 4rem;
+    font-size: 4rem;
+}
 
-
-}
-#instgram{
-    transition: color .2s ease;
-    
-}
-#instagram:hover{
-color: #e41da2 ; 
-}
-#pinterest{
+#instgram {
     transition: color .2s ease;
 }
-#pinterest:hover{
-color: rgb(208, 10, 10) ; 
+
+#instagram:hover {
+    color: #e41da2;
 }
-#facebook{
+
+#pinterest {
     transition: color .2s ease;
 }
-#facebook:hover{
-color: rgb(101, 160, 255) ; 
+
+#pinterest:hover {
+    color: rgb(208, 10, 10);
 }
 
-
-/* .contact{
-    background-color: transparent;
-    border: 1px solid #ddd;
-    height: 30px;
-    width: 100px;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 5px;
-    margin: 1rem 0 3rem 0;
-    font-size: 12px;
-    color: white;
-    
-    text-decoration: none;
-   transition: .2s ease;
-   
-
+#facebook {
+    transition: color .2s ease;
 }
-.contact:hover{
-    background-color: #ddd;
-    color: black;
-    border: 1px solid black;
-    box-shadow: 1px 5px 10px black;
-} */
 
-.footerbottom{
-    /* background-color:rgba(162, 154, 154, 0.375); */
- 
-   background-color: #02040645;
-   
-    /* background-color: rgb(166, 166, 166); */
+#facebook:hover {
+    color: rgb(101, 160, 255);
+}
+
+.footerbottom {
+    background-color: #02040645;
     width: 100%;
     padding: 20px 0;
     text-align: center;
     display: flex;
     align-items: center;
     justify-content: center;
-
 }
-.footerbottom p{
+
+.footerbottom p {
     font-size: 14px;
-    word-spacing:2px;
+    word-spacing: 2px;
     text-transform: capitalize;
 }
+
 /* footercode ends here */
 
 /* Contact Form code starts from here */
@@ -558,30 +517,27 @@ color: rgb(101, 160, 255) ;
     right: 5px;
     cursor: pointer;
     padding: 16px;
-  }
-  
-  .floating-contact-form .contact-icon i {
+}
+
+.floating-contact-form .contact-icon i {
     font-size: 42px;
     color: #003049;
     transition: all 300ms ease;
-   
-    
-  }
-  
-  .floating-contact-form .contact-icon i:hover {
+}
+
+.floating-contact-form .contact-icon i:hover {
     transform: scale(1.1);
-  }
-  .floating-contact-form{
+}
+
+.floating-contact-form {
     display: flex;
     align-items: center;
     justify-content: center;
-  }
-  
-  .floating-contact-form .form-container {
+}
+
+.floating-contact-form .form-container {
     position: fixed;
-    bottom: 60px; 
-   /* right: 45px; */
-    
+    bottom: 60px;
     background-color: rgba(255, 255, 255, 0.168);
     backdrop-filter: blur(5px);
     padding: 24px 36px;
@@ -589,46 +545,45 @@ color: rgb(101, 160, 255) ;
     font-family: "Roboto", sans-serif;
     box-shadow: 0 10px 50px rgba(0, 0, 0, 0.1);
     border-radius: 24px;
-   z-index: 99; 
+    z-index: 99;
     transform: rotateZ(-6deg);
     transform-origin: bottom right;
     opacity: 0;
     pointer-events: none;
     transition: all 500ms ease;
-  }
-  
-  .floating-contact-form .form-container.active {
+}
+
+.floating-contact-form .form-container.active {
     transform: rotateZ(0deg);
     opacity: 1;
     pointer-events: auto;
-  }
-  
-  .floating-contact-form * {
+}
+
+.floating-contact-form * {
     box-sizing: border-box;
-  
-  }
-  
-  .floating-contact-form h3 {
+
+}
+
+.floating-contact-form h3 {
     font-size: 3.3rem;
-    
+
     color: #003049;
     margin-top: 10px;
     position: relative;
     margin-bottom: 8px;
-  }
-  
-  .floating-contact-form h3::after {
+}
+
+.floating-contact-form h3::after {
     content: "";
     height: 3px;
     width: 36px;
-    /* background: #ef233c; */
     position: absolute;
     left: 0;
     bottom: -4px;
-  }
-  
-  .floating-contact-form form input[type="text"],
-  .floating-contact-form form textarea {
+}
+
+.floating-contact-form form input[type="text"],
+.floating-contact-form form textarea {
     width: 100%;
     padding: 14px 20px;
     padding-left: 40px;
@@ -637,87 +592,90 @@ color: rgb(101, 160, 255) ;
     border-radius: 8px;
     color: #003049;
     margin-bottom: 20px;
-  }
-  
-  .floating-contact-form form input:focus,
-  .floating-contact-form form textarea:focus {
+}
+
+.floating-contact-form form input:focus,
+.floating-contact-form form textarea:focus {
     outline: none;
-  }
-  
-  .floating-contact-form .field-container {
+}
+
+.floating-contact-form .field-container {
     position: relative;
-  }
-  
-  .floating-contact-form .field-container label {
+}
+
+.floating-contact-form .field-container label {
     position: absolute;
     opacity: 0;
-    /* top: 15px;
-    left: 40px; */
     color: #003049;
     font-size: 1.7rem;
     border-left: 8px solid #fff;
     border-right: 8px solid #fff;
     transition: all 300ms ease;
     pointer-events: none;
-  }
-  ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+}
+
+::placeholder {
+    /* Chrome, Firefox, Opera, Safari 10.1+ */
     color: rgba(88, 120, 163, 0.555);
-   
+
     font-size: 1.6rem;
-    opacity: 1; /* Firefox */
-  }
-  
-  :-ms-input-placeholder { /* Internet Explorer 10-11 */
+    opacity: 1;
+    /* Firefox */
+}
+
+:-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
     color: rgba(88, 120, 163, 0.555);
-  }
-  
-  ::-ms-input-placeholder { /* Microsoft Edge */
+}
+
+::-ms-input-placeholder {
+    /* Microsoft Edge */
     color: rgba(88, 120, 163, 0.555);
-  }
-  #nameicon{
-   font-size: 2rem;
-  }
-  #emailicon{
+}
+
+#nameicon {
     font-size: 2rem;
-   }
-   #messageicon{
+}
+
+#emailicon {
+    font-size: 2rem;
+}
+
+#messageicon {
     font-size: 2rem;
 
-   }
+}
 
-  
-  .floating-contact-form .field-container label.active {
+
+.floating-contact-form .field-container label.active {
     font-size: 1.7rem;
     background: rgba(0, 0, 0, 0.114);
     backdrop-filter: blur(10px);
-    /* border-radius: 60%; */
     color: #fff;
     padding: 2px 16px;
     top: -8px;
     left: 24px;
     font-weight: bold;
     opacity: 1;
-  }
-  
-  .floating-contact-form .field-container i {
-    position: absolute;
-    /* background-color: red; */
-    top: 15px;
+}
 
+.floating-contact-form .field-container i {
+    position: absolute;
+    top: 15px;
     left: 12px;
     color: rgba(0, 55, 85, 0.8);
-  }
+}
 
-  
-  .floating-contact-form form textarea {
+
+.floating-contact-form form textarea {
     height: 150px;
     resize: none;
     font-size: 16px;
     font-family: "Roboto", sans-serif;
-  }
-  
-  
-  .floating-contact-form form input[type="submit"] {
+}
+
+
+.floating-contact-form form input[type="submit"] {
     border: none;
     background: #003049;
     color: #fff;
@@ -728,11 +686,12 @@ color: rgb(101, 160, 255) ;
     font-weight: bold;
     cursor: pointer;
     transition: all 500ms ease;
-  }
-  
-  .floating-contact-form form input[type="submit"]:hover {
+}
+
+.floating-contact-form form input[type="submit"]:hover {
     background: #00659b;
-  }
+}
+
 /* Contact form code ends here */
 
 /* responsive code below*/
@@ -769,7 +728,7 @@ color: rgb(101, 160, 255) ;
 
 
     }
-  
+
 }
 
 @media screen and (max-width:1200px) {
@@ -809,13 +768,14 @@ color: rgb(101, 160, 255) ;
 
 @media screen and (max-width:998px) {
 
-    body{
+    body {
         margin-top: 60px;
     }
 
-    .dropdownlist{
+    .dropdownlist {
         height: 180px;
     }
+
     html {
         font-size: 55%;
 
@@ -827,7 +787,7 @@ color: rgb(101, 160, 255) ;
         height: 80px;
     }
 
-    .heading { 
+    .heading {
         font-size: 3rem;
 
     }
@@ -846,7 +806,7 @@ color: rgb(101, 160, 255) ;
         height: 234px;
 
     }
-  
+
 
 }
 
@@ -911,14 +871,16 @@ color: rgb(101, 160, 255) ;
         height: 117px;
 
     }
-    .floating-contact-form .field-container i{
-        top:18px;
+
+    .floating-contact-form .field-container i {
+        top: 18px;
     }
-    .floating-contact-form .field-container label{
-        top:17px;
+
+    .floating-contact-form .field-container label {
+        top: 17px;
     }
-   
-     
+
+
 
 }
 
