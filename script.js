@@ -204,7 +204,7 @@ function appearanceMOde() {
 
   else {
     // BODY 
-    document.body.style.backgroundImage = "url('whitewall2-mindark.jpg')";
+    document.body.style.backgroundImage = "url('darkpattern.jpg')";
 
     // navbar
     document.getElementById("navbar").style.backgroundColor = "#0B0C10";
