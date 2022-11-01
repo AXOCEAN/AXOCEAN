@@ -50,8 +50,10 @@ body {
     z-index: 9999;
     top: 0;
     position: fixed;
-    background: linear-gradient(#acb6e5,#86fde8);
-    background-image: url("darkpattern.jpg");
+    /* background: linear-gradient(#49506d,#34514b); */
+    background-color: rgba(222, 252, 255, 0.253);
+    backdrop-filter: blur(15px);
+    /* background-image: url("darkpattern.jpg"); */
     background-size: cover;
     opacity: 1;
     transition: all 500ms ease;
@@ -68,10 +70,9 @@ body {
    
 }
 #LpHeading{
-    color: white;
-    text-shadow: 0px 0px 10px white,
-  
-    0px 0px 10px rgb(13, 51, 167);
+    color: rgb(164, 236, 247);
+    /* text-shadow: 0px 0px 10px rgb(253, 253, 253), */
+    /* 0px 0px 10px rgb(20, 20, 20); */
     font-size: 3rem;
     font-family: Whitney, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
     font-weight: 800;
@@ -82,15 +83,16 @@ body {
     width: 25%;
 }
 .smallnav span{
-    color: white;
+    color: black;
     font-size: 1.5rem;
     font-family: Whitney, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
     font-weight: 600;
 
 }
 .smallnav span:hover{
-    text-shadow: 0px 0px 10px rgb(212, 252, 255),
-    0px 0px 10px rgb(212, 252, 255);;
+    /* text-shadow: 0px 0px 10px rgb(212, 252, 255),
+    0px 0px 10px rgb(212, 252, 255);; */
+    color: cadetblue;
 }
 .LpFlipkart{
     height: 50px;
@@ -118,17 +120,26 @@ body {
 #bigheading{
     font-size: 9rem;
     text-align: center;
-    color: white;
+    color: black;
     font-family: Whitney, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
     font-weight: 800;
     letter-spacing: 3px;
     word-spacing: 5px;
 
 }
+#thisis{
+    font-size: 7rem;
+    text-align: center;
+    color: black;
+    font-family: Whitney, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+    font-weight: 800;
+    letter-spacing: 3px;
+    word-spacing: 5px;
+}
 #hairaccessories{
     text-align: center;
     font-size: 1rem;
-    color: rgb(228, 228, 228);
+    color: rgb(0, 0, 0);
     font-family: Whitney, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
     font-weight: 600;
     letter-spacing: 3px;
@@ -138,7 +149,6 @@ body {
 .letsgocontainer{
     width: 100%;
     height: 230px;
-    /* background-color: red; */
     display: flex;
     align-items: flex-end;
     justify-content: center;
@@ -147,14 +157,46 @@ body {
     height: 0px;
 }
 #letsgolabel{
-    color: white;
+    color: rgb(84, 209, 199);
     font-size: 2.5rem;
     font-family: Whitney, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
     font-weight:800;
+    border: 3px solid rgb(138, 255, 245);
+    height: 40px;
+    width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+   box-shadow: 0px 0px 10px rgb(84, 209, 199),
+   0px 0px 10px rgb(84, 209, 199) inset ;
+   animation: letsgolabel 2s infinite ease-out;
+   cursor: pointer;
+}
+
+@keyframes letsgolabel{
+    0%{
+       margin-top: 10px;
+    }
+   
+    50%{
+        margin-bottom: 10px;
+    }
+   
+    75%{
+        margin-top: 10px;
+    }
+
 }
 #letsgolabel:hover{
-    color: #0fa7c6;
+    color: white;
+    box-shadow: 0px 0px 10px white,
+    0px 0px 10px white,
+   0px 0px 10px white inset;
+    
+   
 }
+
 .nav_bar {
     background-color: #fff;
     position: fixed;
