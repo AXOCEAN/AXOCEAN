@@ -7,6 +7,9 @@
 
 
 
+
+
+
 // foating form
 const formInputs = document.querySelectorAll(
   ".floating-contact-form .form-container .form-input"
@@ -200,11 +203,11 @@ function appearanceMOde() {
 
 
 
-  }
+  } 
 
   else {
     // BODY 
-    document.body.style.backgroundImage = "url('darkpattern.jpg')";
+    document.body.style.backgroundImage = "url('whitewall2-mindark.jpg')";
 
     // navbar
     document.getElementById("navbar").style.backgroundColor = "#0B0C10";
@@ -292,3 +295,21 @@ function topFunction() {
   document.body.scropllTop = 0;
   document.documentElement.scrollTop = 0;
 }
+// loading page
+
+let scrollBtn = document.getElementById("letsgo");
+let landingPage = document.getElementById("landingpage");
+let landingPagenav = document.getElementById("landingpagenav");
+
+
+scrollBtn.addEventListener("change",scrollUpfunction)
+function scrollUpfunction(){
+  if(scrollBtn.checked){
+    landingPage.style.height ="0"
+   document.getElementById("landingpagenav").style.display = "none"
+   document.getElementById("landingpagenav").style.display = "none"
+   document.getElementById("thisisaxocean").style.display = "none"
+   document.getElementById("letsgocontainer").style.display = "none"
+  }
+}
+

@@ -36,15 +36,125 @@ body {
     margin-top: 80px;
 }
 
-#preloader {
+/* #preloader {
     background: #FFFFFF url(preloadergif.gif) no-repeat center center;
     background-size: 20%;
     height: 100vh;
     width: 100%;
     position: fixed;
     z-index: 9999;
+} */
+.landingpagecontainer{
+    width: 100%;
+    height: 900px;
+    z-index: 9999;
+    top: 0;
+    position: fixed;
+    background: linear-gradient(#acb6e5,#86fde8);
+    background-image: url("darkpattern.jpg");
+    background-size: cover;
+    opacity: 1;
+    transition: all 500ms ease;
 }
 
+.landingpagenav{
+    height: 80px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+   
+}
+#LpHeading{
+    color: white;
+    text-shadow: 0px 0px 10px white,
+  
+    0px 0px 10px rgb(13, 51, 167);
+    font-size: 3rem;
+    font-family: Whitney, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+    font-weight: 800;
+}
+.smallnav{
+    display: flex;
+    justify-content: space-between;
+    width: 25%;
+}
+.smallnav span{
+    color: white;
+    font-size: 1.5rem;
+    font-family: Whitney, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+    font-weight: 600;
+
+}
+.smallnav span:hover{
+    text-shadow: 0px 0px 10px rgb(212, 252, 255),
+    0px 0px 10px rgb(212, 252, 255);;
+}
+.LpFlipkart{
+    height: 50px;
+    width: 100px;
+    border-radius: 10px;
+    border: none;
+    background-color: rgb(236, 196, 0);
+    color: white;
+    font-weight: 700;
+    font-family: Whitney, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+}
+.LpFlipkart:hover{
+    background-color: rgb(214, 175, 4);
+    box-shadow: 0px 0px 10px yellow,
+    0px 0px 10px yellow;
+}
+.thisisaxocean{
+    width: 100%;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#bigheading{
+    font-size: 9rem;
+    text-align: center;
+    color: white;
+    font-family: Whitney, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+    font-weight: 800;
+    letter-spacing: 3px;
+    word-spacing: 5px;
+
+}
+#hairaccessories{
+    text-align: center;
+    font-size: 1rem;
+    color: rgb(228, 228, 228);
+    font-family: Whitney, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+    font-weight: 600;
+    letter-spacing: 3px;
+    word-spacing: 5px;
+    padding: 0px 20px;
+}
+.letsgocontainer{
+    width: 100%;
+    height: 230px;
+    /* background-color: red; */
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+#letsgo{
+    height: 0px;
+}
+#letsgolabel{
+    color: white;
+    font-size: 2.5rem;
+    font-family: Whitney, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+    font-weight:800;
+}
+#letsgolabel:hover{
+    color: #0fa7c6;
+}
 .nav_bar {
     background-color: #fff;
     position: fixed;
@@ -132,7 +242,7 @@ body {
 @keyframes dropdownlist {
     0% {
         width: 0;
-    }
+    } 
 }
 
 .link1 {
@@ -838,6 +948,12 @@ footer {
         width: 497px;
         height: 203px;
 
+    }
+    .LpFlipkart{
+        display: none;
+    }
+    .smallnav{
+        width: 60%;
     }
 
 }
