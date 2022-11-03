@@ -16,7 +16,7 @@
 
 </head>
 <header>
-  <div class="nav_bar">
+  <div id="navbar" class="nav_bar">
     <!-- Home button -->
     <button class="btn"><a class="fa fa-home" href="index.html"></a></button>
 
@@ -169,59 +169,7 @@
 
   </footer>
   <!-- script -->
-  <script>
-    // foating form
-    const formInputs = document.querySelectorAll(
-      ".floating-contact-form .form-container .form-input"
-    );
-    
-    const contactIcon = document.querySelector(
-      ".floating-contact-form .contact-icon"
-    );
-   
-
-
-
-
-    const formContainer = document.querySelector(
-      ".floating-contact-form .form-container"
-    );
-
-    contactIcon.addEventListener("click", () => {
-      formContainer.classList.toggle("active");
-    });
-
-    window.addEventListener("click", (e) => {
-  if (!formContainer.classList.contains("active")) return;
-  if (e.target.matches(".floating-contact-form *")
-    || e.target.matches(".floating-contact-form .contact-icon *")
-  ) return;
-  formContainer.classList.toggle("active");
-});
-   
-
-    formInputs.forEach((i) => {
-      i.addEventListener("focus", () => {
-        i.previousElementSibling.classList.add("active");
-      });
-    });
-
-    formInputs.forEach((i) => {
-      i.addEventListener("blur", () => {
-        if (i.value === "") {
-          i.previousElementSibling.classList.remove("active");
-        }
-      });
-    });
-
-
-
-
-
-
-
-
-
+  <script src="script.js">
   </script>
 </body>
 
