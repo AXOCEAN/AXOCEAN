@@ -127,7 +127,7 @@ function hamburgerMouseOut() {
 function appearanceMOde() {
   if (document.getElementById('switch').checked == false) {
     // BODY 
-    // document.body.style.backgroundImage = "url('whitewall2-min.jpg')";
+    document.body.style.backgroundImage = "url('protruding-squareswhite.svg')";
     // navbar
 
     document.getElementById("navbar").style.backgroundColor = "#fff";
@@ -207,7 +207,7 @@ function appearanceMOde() {
 
   else {
     // BODY 
-    // document.body.style.backgroundImage = "url('whitewall2-mindark.jpg')";
+    document.body.style.backgroundImage = "url('protruding-squares.svg')";
 
     // navbar
     document.getElementById("navbar").style.backgroundColor = "#0B0C10";
@@ -322,3 +322,8 @@ homeBtn.addEventListener("click",dontdisplayLandingpage)
   document.getElementById("thisisaxocean").style.display = "none"
   document.getElementById("letsgocontainer").style.display = "none"
  }
+
+
+
+
+ 

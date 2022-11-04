@@ -32,8 +32,8 @@ body {
     width: 100%;
     scroll-behavior: smooth;
     /* background-image: url(whitewall2-min.jpg); */
-    background-image:url("low-poly-grid-haikei.svg");
-    background-size: cover;
+    /* background-image:url("low-poly-grid-haikei.svg"); */
+    background-image:url("protruding-squareswhite.svg");
     margin-top: 80px;
 }
 
@@ -53,9 +53,11 @@ body {
     position: fixed;
     /* background: linear-gradient(#49506d,#34514b); */
     background-color: rgba(222, 252, 255, 0.253);
-    backdrop-filter: blur(15px);
+    /* backdrop-filter: blur(15px); */
     /* background-image: url("darkpattern.jpg"); */
+    background-image:url("page-turner.svg");
     background-size: cover;
+    
     opacity: 1;
     transition: all 500ms ease;
 }
@@ -503,7 +505,7 @@ body {
 .items {
     width: 300px;
     height: 500px;
-    backdrop-filter: blur(2px);
+    backdrop-filter: blur(3px);
     background-color: #2f2f2f3e;
     box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.142);
     border-radius: 20px;
