@@ -103,11 +103,7 @@ body{
    border: 2px solid white;
   min-height: 700px;
 /* background: linear-gradient(#8693ab,#bdd4e7); */
-/* background-image: url(low-poly-grid-haikei.svg);
-background-size: contain; */
-background-image: url(protruding-squareswhite.svg);
-
-  
+background-image: url(low-poly-grid-haikei.svg);
 background-size: contain;
   margin-top: 80px ;
   margin-bottom: 80px;
