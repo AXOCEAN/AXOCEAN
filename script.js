@@ -310,6 +310,7 @@ function scrollUpfunction(){
    document.getElementById("landingpagenav").style.display = "none"
    document.getElementById("thisisaxocean").style.display = "none"
    document.getElementById("letsgocontainer").style.display = "none"
+   document.body.style.overflow = "visible"
   }
 }
 
