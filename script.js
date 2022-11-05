@@ -312,18 +312,6 @@ function scrollUpfunction(){
    document.getElementById("letsgocontainer").style.display = "none"
   }
 }
-let homeBtn = document.getElementsByClassName("fa");
-
-homeBtn.addEventListener("click",dontdisplayLandingpage)
- function dontdisplayLandingpage(){
-  landingPage.style.height ="0"
-  document.getElementById("landingpagenav").style.display = "none"
-  document.getElementById("landingpagenav").style.display = "none"
-  document.getElementById("thisisaxocean").style.display = "none"
-  document.getElementById("letsgocontainer").style.display = "none"
- }
-
-
 
 
  
