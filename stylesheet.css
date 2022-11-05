@@ -26,11 +26,11 @@
 
 html {
     font-size: 62.5%;
+scroll-behavior: smooth;
 }
 
 body {
     width: 100%;
-    scroll-behavior: smooth;
     /* background-image: url(whitewall2-min.jpg); */
     /* background-image:url("low-poly-grid-haikei.svg"); */
     background-image:url("protruding-squareswhite.svg");
