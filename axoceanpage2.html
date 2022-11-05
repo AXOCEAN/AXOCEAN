@@ -161,8 +161,7 @@
   <footer>
     <div class="footercontainer">
       <h3 class="websiteheading">AXOCEAN</h3>
-      <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia adipisci quasi saepe laborum
-        nisi rem laboriosam</p>
+      <p class="description">'Hair Accessories Takes It To The Next Level.'</p>
       <ul class="socialmedialogos">
 
         <li><a class="fab fa-instagram" id="instagram" href="#"></a></li>
@@ -177,9 +176,37 @@
     <div class="footerbottom">
       <p> &copy; 2022 <span>AXOCEAN</span> All rights reserved</p>
       <br><p>Hand Crafted in Jaipur, Rajasthan</p>
+      
     </div>
-
+    <button class="fas" id="backtotopbutton" onclick="scrolltoTopfunction()">&#8593;</button>
+    
   </footer>
+  <script>
+    let mybutton = document.getElementById("backtotopbutton");
+
+    window.onscroll = function(){
+      scrollFunction()
+    };
+
+
+    function scrollFunction(){
+      if(document.body.scrollTop > 400 || document.documentElement.scrollTop > 400)
+      {
+        mybutton.style.display = "block"
+       }
+       else{
+        mybutton.style.display = "none"
+       }
+    }
+
+    function scrolltoTopfunction(){
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+
+    }
+    
+    
+  </script>
 </body>
 
 </html>
