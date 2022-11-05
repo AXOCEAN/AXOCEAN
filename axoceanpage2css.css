@@ -25,8 +25,8 @@ body{
     width: 100%;
     scroll-behavior: smooth;
    margin-top: 100px;
-   background-image: url(protruding-squareswhite.svg);
-
+   /* background-image: url(protruding-squareswhite.svg); */
+    background: linear-gradient(rgba(135, 207, 235, 0.291),rgba(0, 251, 255, 0));
   
    background-size: contain;
   
@@ -103,11 +103,12 @@ body{
    border: 2px solid white;
   min-height: 700px;
 /* background: linear-gradient(#8693ab,#bdd4e7); */
-background-image: url(low-poly-grid-haikei.svg);
+/* background-image: url(protruding-squareswhite.svg); */
 background-size: contain;
   margin-top: 80px ;
   margin-bottom: 80px;
   border-radius: 50px;
+
 }
 .designsheading{
     color: black; 
@@ -129,8 +130,8 @@ background-size: contain;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    justify-content:space-around;
-    padding: 50px;
+    justify-content:space-between;
+    /* padding: 30px; */
     
 }
 
@@ -138,54 +139,68 @@ background-size: contain;
 
 
 .design{
-    width: 300px;
-    height: 500px;
+    width: 200px;
+    height: 320px;
     backdrop-filter: blur(2px);
     background-color: #2f2f2f94;
     box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.142);
-    border-radius: 20px;
+    /* border-radius: 20px; */
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
     text-align: center;
     margin-bottom: 20px;
+    overflow: hidden;
+   
 } 
-
-
-.design h1 {
-  /* for product heading */
-  background-color: #ddd;
-  color: black;
-  width: 100%;
-  height: 50px;
-  text-align: center;
-  border-top-left-radius: 20px;
-  border-top-right-radius: 20px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-family: Whitney, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  font-weight: bold;
+.productdescription{
+    background-color: #ddd;
+    height: 25%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 10px;
+    justify-content: space-evenly;
 
 }
 
-.design img {
+.design h1 {
+  /* for product heading */
+  color: black;
+  font-family: Whitney, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  font-weight: bold;
+  font-size: 1.5rem;
+
+
+}
+
+.productimagediv
+{
     /* for product images */
-    height: 250px;
+    height: 80%;
+    display: flex;
+    
+    align-items: center;
+    justify-content: center;
    
-    border-radius: 10%;
+}
+.productimagediv img{
+    height: 70%;
+    
 }
 
 .design h3 {
     /* for product description */
 
-    color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    font-weight:300;
     font-family: Whitney, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
     -webkit-font-smoothing: antialiased;
 
-    font-size: 1.5rem;
+    font-size: 1rem;
 }
 
 .design-a-tag {
@@ -194,21 +209,15 @@ background-size: contain;
 
 .design  button {
     /* see details href button */
-    display: flex;
+   
     background-color: #ddd;
- 
     align-items: center;
     justify-content: center;
-    height: 50px;
-    width: 100%;
     cursor: pointer;
     text-decoration: none;
-    color: black;
+    color: rgb(137, 90, 49);
     border: none;
-    border-bottom-left-radius: 20px;
-    border-bottom-right-radius: 20px;
-
-    font-size: 1.5rem;
+    font-size: 1rem;
     font-family: Whitney, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
     -webkit-font-smoothing: antialiased;
     font-weight: bold;
