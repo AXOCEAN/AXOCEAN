@@ -56,6 +56,8 @@ body {
     /* backdrop-filter: blur(15px); */
     /* background-image: url("darkpattern.jpg"); */
     background-image:url("page-turner.svg");
+    background-image: url("LPbackgroundfulllandscape.jpg");
+
     background-size: cover;
     opacity: 1;
     transition: all 500ms ease;
@@ -72,7 +74,7 @@ body {
    
 }
 #LpHeading{
-    color: rgb(75, 166, 180);
+    color: rgb(68, 92, 96);
     /* text-shadow: 0px 0px 10px rgb(253, 253, 253), */
     /* 0px 0px 10px rgb(20, 20, 20); */
     font-size: 3rem;
@@ -94,7 +96,8 @@ body {
 .smallnav span:hover{
     /* text-shadow: 0px 0px 10px rgb(212, 252, 255),
     0px 0px 10px rgb(212, 252, 255);; */
-    color: cadetblue;
+    color: rgb(43, 72, 72);
+   
 }
 .LpFlipkart{
     height: 50px;
@@ -113,11 +116,12 @@ body {
 }
 .thisisaxocean{
     width: 100%;
-    height: 500px;
+    height: 600px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+  
 }
 #bigheading{
     font-size: 9rem;
@@ -127,6 +131,7 @@ body {
     font-weight: 800;
     letter-spacing: 3px;
     word-spacing: 5px;
+  
 
 }
 #thisis{
@@ -137,6 +142,17 @@ body {
     font-weight: 800;
     letter-spacing: 3px;
     word-spacing: 5px;
+   
+}
+#slogan{
+    font-size: 2rem;
+    text-align: center;
+    color: black;
+    width: 100%;
+    margin-top: 80px;
+    font-style: italic;
+    font-family: Whitney, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+   
 }
 #hairaccessories{
     text-align: center;
@@ -151,11 +167,12 @@ body {
 .letsgocontainer{
     position: relative;
     width: 100%;
-    height: 230px;
+    height: 140px;
     display: flex;
     align-items: flex-end;
     justify-content: center;
     padding-bottom:25px;
+   
     
 }
 #letsgo{
@@ -266,10 +283,10 @@ body {
 
 } 
  #letsgolabel:hover{
-    color: white;
-    box-shadow: 0px 0px 10px white,
-    0px 0px 10px white,
-   0px 0px 10px white inset;
+    color: rgb(67, 67, 67);
+    box-shadow: 0px 0px 10px rgb(27, 27, 27),
+    0px 0px 10px rgb(40, 40, 40),
+   0px 0px 10px rgb(19, 19, 19) inset;
     
    
 }
@@ -668,6 +685,7 @@ footer {
     color: rgb(227, 227, 227);
     margin: 0rem 0 1rem 0;
     font-family: Whitney, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+    font-style: italic;
 
 
 }
@@ -1082,6 +1100,9 @@ footer {
     }
     .smallnav{
         width: 60%;
+    }
+    .landingpagecontainer{
+        background-image: url("LPbackground-min.jpeg");
     }
 
 }
