@@ -142,7 +142,6 @@ background-size: contain;
 .design{
     width: 200px;
     height: 320px;
-    backdrop-filter: blur(2px);
     background-color: #2f2f2f94;
     box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.142);
     /* border-radius: 20px; */
@@ -153,6 +152,7 @@ background-size: contain;
     text-align: center;
     margin-bottom: 20px;
     overflow: hidden;
+border-radius:2px;
    
 } 
 .productdescription{
