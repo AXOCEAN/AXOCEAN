@@ -114,6 +114,7 @@ body{
   min-height: 800px;
 /* background: linear-gradient(#8693ab,#bdd4e7); */
 /* background-image: url(protruding-squareswhite.svg); */
+background-color: white;
 background-size: contain;
   margin-top: 80px ;
   margin-bottom: 80px;
@@ -127,7 +128,7 @@ background-size: contain;
     align-items: center;
     justify-content: center;
     font-size: 3rem;
-    font-family: "Sofia", sans-serif;
+    font-family: Whitney, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
     -webkit-font-smoothing: antialiased;
     font-weight: bold;
     width: 30rem;
@@ -144,7 +145,7 @@ background-size: contain;
     justify-content:space-between;
   
    
-    /* padding: 30px; */
+    padding: 5px;
     /* gap: 15px; */
     
 }
@@ -186,6 +187,7 @@ position: relative;
     background-color: white;
     box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.072);
     /* border-radius: 20px; */
+    padding: 0;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -208,7 +210,7 @@ position: relative;
 
 .productdescription{
     
-    height: 30%;
+    height: 40%;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -216,6 +218,7 @@ position: relative;
     padding: 10px;
     padding-top: 0;
     justify-content: space-evenly;
+    background-color: transparent;
     /* border-top-left-radius: 15px;
     border-top-right-radius: 15px;
     border-bottom-left-radius: 15px;
@@ -227,11 +230,15 @@ position: relative;
 
 .design h1 {
   /* for product heading */
+  width: 90%;
+  white-space: nowrap;
   color: black;
   font-family: Whitney, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   /* font-weight: bold; */
-  font-size: 1.2rem;
+  font-size: 1.6rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
 
 
 }
@@ -239,21 +246,21 @@ position: relative;
 .productimagediv
 {
     /* for product images */
-    height: 70%;
+    height: 60%;
+    width: 100%;
     display: flex;
-    
+ 
     align-items: center;
     justify-content: center;
-   
 }
 .productimagediv img{
-    height: 80%;
+    height: 90%;
     
 }
 
 .design h3 {
     /* for product description */
-
+width: 100%;
     color: rgb(0, 0, 0);
     font-weight:300;
     font-family: Whitney, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
@@ -272,9 +279,10 @@ position: relative;
 
 }
 .oldprize{
-    font-size: 1.3rem;
+    font-size: 1.8rem;
     font-weight: 700;
-    color: black;
+    width: 100%;
+  color: #ed7a3c;
     font-family: Whitney, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
     -webkit-font-smoothing: antialiased;
 
@@ -306,7 +314,7 @@ position: relative;
 .design button:hover{
     background-color: #ed7a3c;
     transition-duration: .4s;
-    border-radius: 5px;
+   
 }
 
 
@@ -544,7 +552,7 @@ footer {
    
    
     .design{
-        width: 200px;
+        width: 190px;
     }
 }
 
@@ -571,7 +579,7 @@ footer {
 @media screen and (max-width:380px){
     .design
     {
-        width: 175px;
+        width: 165px;
         
     }
 }
