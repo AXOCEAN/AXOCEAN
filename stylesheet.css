@@ -32,7 +32,7 @@ html {
 body {
     width: 100%;
     /* background-image:url("protruding-squareswhite.svg"); */
-    background-color: #e0d6ca;
+    background-color: #f4f4f4;
     margin-top: 80px;
     overflow-y: hidden;
 }
@@ -296,7 +296,7 @@ body {
 
 .nav_bar {
     /* background-color: #fff; */
-    background-color: #a1a783;
+    background-color: white;
     position: fixed;
     top: 0;
     z-index: 98;
@@ -370,11 +370,12 @@ body {
 }
 
 .dropdownlist {
-    background-color: rgba(254, 254, 254, 0.793);
+    background-color: rgb(254, 254, 254);
     width: 100%;
     height: 200px;
     display: none;
     padding-top: 10px;
+   
     text-align: center;
     animation: dropdownlist .2s linear;
 }
@@ -487,9 +488,9 @@ body {
 
 /* product heading blured background below*/
 .productheading_div {
-    background-color: rgba(0, 0, 0, 0.1);
+    /* background-color: rgba(0, 0, 0, 0.1); */
     height: 7rem;
-    box-shadow: 0px 8px 10px rgba(128, 128, 128, 0.334);
+    /* box-shadow: 0px 8px 10px rgba(128, 128, 128, 0.334); */
   
     width: 30rem;
     display: flex;
@@ -526,9 +527,10 @@ body {
     height: 500px;
    
     /* background-color: #2f2f2f3e; */
-    background-color: #f4f4f4;
+    background: linear-gradient(rgb(236, 236, 236),rgb(203, 203, 203));
+
     box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.142);
-    border-radius: 20px;
+    /* border-radius: 20px; */
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -556,14 +558,12 @@ body {
 }
 .items h1 {
     /* for product heading */
-    /* background-color: rgb(151, 67, 67); */
-    
     color: black;
-    /* width: 100%;
-    height: 50px; */
+     width: 100%;
+    /* height: 50px; */ 
     text-align: center;
     display: flex;
-    font-size: 2.5rem;
+    font-size: 2.2rem;
    
     font-family: Whitney, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
     -webkit-font-smoothing: antialiased;
@@ -584,21 +584,20 @@ body {
 }
 .itemdescriptioncontainer{
     /* background-color: #f4f4f4; */
-    background-color: #c1af98;
+    /* background-color: #c1af98; */
+    /* background-color: white; */
     height: 40%;
     width: 100%;
-    border-bottom-left-radius: 20px;
+    /* border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
     border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
+    border-top-right-radius: 20px; */
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: space-between;
-    padding-left: 20px;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    border: 2px solid #f4f4f4;
+  padding: 20px;
+    /* border: 2px solid #f4f4f4; */
   
 
 
@@ -621,14 +620,14 @@ body {
     /* see details href button */
     display: flex;
    
-  background-color: transparent;
+  background-color: black;
     align-items: center;
     justify-content: center;
-    /* height: 50px;
-    width: 100%; */
+     height: 50px;
+    width: 100%; 
     cursor: pointer;
     text-decoration: none;
-    color: black;
+    color: white;
     border: none;
     /* border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px; */
@@ -636,6 +635,10 @@ body {
     font-family: Whitney, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
     -webkit-font-smoothing: antialiased;
     font-weight: bold;
+}
+.items button:hover{
+    background-color: #0c161c;
+    color: #ed7a3c;
 }
 
 .items:hover {
@@ -702,7 +705,8 @@ body {
 /* footercode starts from here */
 footer {
     
-    background-color: #1c1c1c;
+    /* background-color: #1c1c1c; */
+    background-color: rgb(8, 8, 8);
     height: auto;
     width: 100%;
     padding-top: 40px;
@@ -829,6 +833,7 @@ footer {
 .floating-contact-form .contact-icon i {
     font-size: 42px;
     color: #003049;
+    
     transition: all 300ms ease;
 }
 
@@ -1262,5 +1267,33 @@ footer {
 
     }
 }
+    @media  (min-height:2000px) {
+        @media(min-width:800px){
+
+      
+        body{
+            
+            height: fit-content;
+           
+        }
+        .mainbody{
+            height: 1600px;
+           
+        }
+        .items{
+            margin-bottom: none;
+        }
+        .sliderdiv{ margin-top: 150px;
+            margin-bottom: 50px;
+        }
+        .landingpagecontainer{
+            height: 2500px;
+            background-color: white;
+        }
+        .thisisaxocean{
+            height: 2050px;
+        }
+    }
+    }
 
 /* responsive code above */

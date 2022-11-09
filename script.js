@@ -123,14 +123,80 @@ function hamburgerMouseOut() {
   }
 }
 
+
+
+// see details mouse over function
+
+//button -1
+function seedetails1colorchangeFunction() {
+  document.getElementById("item1-button").style.color = "#ed7a3c";
+  document.getElementById("item1-button").style.backgroundColor = "#0c161c";
+}
+function seedetails1colorresetFunction() {
+  if (document.getElementById('switch').checked == false) {
+    document.getElementById("item1-button").style.color = "white";
+    document.getElementById("item1-button").style.backgroundColor = "black";
+  }
+  else {
+    document.getElementById("item1-button").style.color = "black";
+    document.getElementById("item1-button").style.backgroundColor = "white";
+  }
+}
+
+//button -2
+function seedetails2colorchangeFunction() {
+  document.getElementById("item2-button").style.color = "#ed7a3c";
+  document.getElementById("item2-button").style.backgroundColor = "#0c161c";
+}
+function seedetails2colorresetFunction() {
+  if (document.getElementById('switch').checked == false) {
+    document.getElementById("item2-button").style.color = "white";
+    document.getElementById("item2-button").style.backgroundColor = "black";
+  }
+  else {
+    document.getElementById("item2-button").style.color = "black";
+    document.getElementById("item2-button").style.backgroundColor = "white";
+  }
+}
+//button -3
+function seedetails3colorchangeFunction() {
+  document.getElementById("item3-button").style.color = "#ed7a3c";
+  document.getElementById("item3-button").style.backgroundColor = "#0c161c";
+}
+function seedetails3colorresetFunction() {
+  if (document.getElementById('switch').checked == false) {
+    document.getElementById("item3-button").style.color = "white";
+    document.getElementById("item3-button").style.backgroundColor = "black";
+  }
+  else {
+    document.getElementById("item3-button").style.color = "black";
+    document.getElementById("item3-button").style.backgroundColor = "white";
+  }
+}
+//button -4
+function seedetails4colorchangeFunction() {
+  document.getElementById("item4-button").style.color = "#ed7a3c";
+  document.getElementById("item4-button").style.backgroundColor = "#0c161c";
+}
+function seedetails4colorresetFunction() {
+  if (document.getElementById('switch').checked == false) {
+    document.getElementById("item4-button").style.color = "white";
+    document.getElementById("item4-button").style.backgroundColor = "black";
+  }
+  else {
+    document.getElementById("item4-button").style.color = "black";
+    document.getElementById("item4-button").style.backgroundColor = "white";
+  }
+}
+
 // code for Theme Color or Dark mode or LIght mode
 function appearanceMOde() {
   if (document.getElementById('switch').checked == false) {
     // BODY 
-    document.body.style.backgroundColor = "#e0d6ca";
+    document.body.style.backgroundColor = "#f4f4f4";
     // navbar
 
-    document.getElementById("navbar").style.backgroundColor = "#a1a783";
+    document.getElementById("navbar").style.backgroundColor = "white";
     document.getElementById("navbar").style.boxShadow = " 0px 0px 10px 0.1px gray";
 
     document.getElementById("heading").style.color = "black";
@@ -145,8 +211,6 @@ function appearanceMOde() {
 
     // homebutton
     document.getElementById("homebtn").style.color = "black";
-     // productheading_div
-     document.getElementById("productheading_div").style.boxShadow = "0px 8px 10px rgba(128, 128, 128, 0.334)";
      document.getElementById("productarticle").style.color = "black";
    //oldprize--newprize
    document.getElementById("oldprize1").style.color = "#212121";
@@ -164,22 +228,26 @@ function appearanceMOde() {
     // document.getElementById("item1-h1").style.backgroundColor = "#ddd";
     // document.getElementById("item1-button").style.backgroundColor = "#ddd";
     document.getElementById("item1-h1").style.color = "black";
-    document.getElementById("item1-button").style.color = "black";
+    document.getElementById("item1-button").style.color = "white";
+    document.getElementById("item1-button").style.backgroundColor = "black";
 
     // document.getElementById("item2-h1").style.backgroundColor = "#ddd";
     // document.getElementById("item2-button").style.backgroundColor = "#ddd";
     document.getElementById("item2-h1").style.color = "black";
-    document.getElementById("item2-button").style.color = "black";
+    document.getElementById("item2-button").style.color = "white";
+    document.getElementById("item2-button").style.backgroundColor = "black";
 
     // document.getElementById("item3-h1").style.backgroundColor = "#ddd";
     // document.getElementById("item3-button").style.backgroundColor = "#ddd";
     document.getElementById("item3-h1").style.color = "black";
-    document.getElementById("item3-button").style.color = "black";
+    document.getElementById("item3-button").style.color = "white";
+    document.getElementById("item3-button").style.backgroundColor = "black";
 
     // document.getElementById("item4-h1").style.backgroundColor = "#ddd";
     // document.getElementById("item4-button").style.backgroundColor = "#ddd";
     document.getElementById("item4-h1").style.color = "black";
-    document.getElementById("item4-button").style.color = "black";
+    document.getElementById("item4-button").style.color = "white";
+    document.getElementById("item4-button").style.backgroundColor = "black";
 
     //  h3 of items
     document.getElementById("item1-h3").style.color = "rgb(56, 56, 56)";
@@ -189,15 +257,15 @@ function appearanceMOde() {
 
    
     // description container
-document.getElementById("itemdescriptioncontainer1").style.backgroundColor = "#c1af98";
-document.getElementById("itemdescriptioncontainer2").style.backgroundColor = "#c1af98";
-document.getElementById("itemdescriptioncontainer3").style.backgroundColor = "#c1af98";
-document.getElementById("itemdescriptioncontainer4").style.backgroundColor = "#c1af98";
+// document.getElementById("itemdescriptioncontainer1").style.backgroundColor = "#c1af98";
+// document.getElementById("itemdescriptioncontainer2").style.backgroundColor = "#c1af98";
+// document.getElementById("itemdescriptioncontainer3").style.backgroundColor = "#c1af98";
+// document.getElementById("itemdescriptioncontainer4").style.backgroundColor = "#c1af98";
     //   items or product containers
-    document.getElementById("item1container").style.backgroundColor = "#f4f4f4";
-    document.getElementById("item2container").style.backgroundColor = "#f4f4f4";
-    document.getElementById("item3container").style.backgroundColor = "#f4f4f4";
-    document.getElementById("item4container").style.backgroundColor = "#f4f4f4";
+    document.getElementById("item1container").style.background = "linear-gradient(rgb(236, 236, 236),rgb(203, 203, 203)";
+    document.getElementById("item2container").style.background = "linear-gradient(rgb(236, 236, 236),rgb(203, 203, 203))";
+    document.getElementById("item3container").style.background = "linear-gradient(rgb(236, 236, 236),rgb(203, 203, 203))";
+    document.getElementById("item4container").style.background = "linear-gradient(rgb(236, 236, 236),rgb(203, 203, 203))";
 
     //  banner or image slider
     document.getElementById("slidermaindiv").style.border = "3px solid white";
@@ -212,7 +280,7 @@ document.getElementById("itemdescriptioncontainer4").style.backgroundColor = "#c
     document.getElementById("dropdownlistlink4").style.color = "black";
 
     // footer
-    document.getElementById("footer").style.backgroundColor = "#1c1c1c";
+    document.getElementById("footer").style.backgroundColor = "rgb(8, 8, 8)";
 
     //    floating form
 
@@ -250,28 +318,29 @@ document.getElementById("itemdescriptioncontainer4").style.backgroundColor = "#c
     document.getElementById("slidermaindiv").style.boxShadow = "0px 8px 10px rgba(1, 1, 1, 0.334)";
     document.getElementById("productarticle").style.color = "white";
 
-     // productheading_div
-     document.getElementById("productheading_div").style.boxShadow = "0px 8px 10px black";
+  
     // items h1 and button 
     // document.getElementById("item1-h1").style.backgroundColor = "black";
     // document.getElementById("item1-button").style.backgroundColor = "black";
     document.getElementById("item1-h1").style.color = "white";
-    document.getElementById("item1-button").style.color = "white";
+    document.getElementById("item1-button").style.color = "black";
+    document.getElementById("item1-button").style.backgroundColor = "white";
+
 
     // document.getElementById("item2-h1").style.backgroundColor = "black";
     // document.getElementById("item2-button").style.backgroundColor = "black";
     document.getElementById("item2-h1").style.color = "white";
-    document.getElementById("item2-button").style.color = "white";
+    document.getElementById("item2-button").style.color = "black";document.getElementById("item2-button").style.backgroundColor = "white";
 
     // document.getElementById("item3-h1").style.backgroundColor = "black";
     // document.getElementById("item3-button").style.backgroundColor = "black";
     document.getElementById("item3-h1").style.color = "white";
-    document.getElementById("item3-button").style.color = "white";
+    document.getElementById("item3-button").style.color = "black";document.getElementById("item3-button").style.backgroundColor = "white";
 
     // document.getElementById("item4-h1").style.backgroundColor = "black";
     // document.getElementById("item4-button").style.backgroundColor = "black";
     document.getElementById("item4-h1").style.color = "white";
-    document.getElementById("item4-button").style.color = "white";
+    document.getElementById("item4-button").style.color = "black";document.getElementById("item4-button").style.backgroundColor = "white";
     //  h3 of items
     document.getElementById("item1-h3").style.color = "rgb(175, 175, 175)";
     document.getElementById("item2-h3").style.color = "rgb(175, 175, 175)";
@@ -279,10 +348,10 @@ document.getElementById("itemdescriptioncontainer4").style.backgroundColor = "#c
     document.getElementById("item4-h3").style.color = "rgb(175, 175, 175)";
 
 // description container
-document.getElementById("itemdescriptioncontainer1").style.backgroundColor = "#0B0C10";
-document.getElementById("itemdescriptioncontainer2").style.backgroundColor = "#0B0C10";
-document.getElementById("itemdescriptioncontainer3").style.backgroundColor = "#0B0C10";
-document.getElementById("itemdescriptioncontainer4").style.backgroundColor = "#0B0C10";
+// document.getElementById("itemdescriptioncontainer1").style.backgroundColor = "#0B0C10";
+// document.getElementById("itemdescriptioncontainer2").style.backgroundColor = "#0B0C10";
+// document.getElementById("itemdescriptioncontainer3").style.backgroundColor = "#0B0C10";
+// document.getElementById("itemdescriptioncontainer4").style.backgroundColor = "#0B0C10";
 
 //oldprize--newprize
 document.getElementById("oldprize1").style.color = "#adadad";
@@ -296,10 +365,10 @@ document.getElementById("newprize3").style.color = "white";
 document.getElementById("newprize4").style.color = "white";
 
     //   items or product containers
-    document.getElementById("item1container").style.backgroundColor = "#f4f4f4";
-    document.getElementById("item2container").style.backgroundColor = "#f4f4f4";
-    document.getElementById("item3container").style.backgroundColor = "#f4f4f4";
-    document.getElementById("item4container").style.backgroundColor = "#f4f4f4";
+    document.getElementById("item1container").style.background = "linear-gradient(rgb(52, 52, 52),rgb(0, 0, 0))";
+    document.getElementById("item2container").style.background = "linear-gradient(rgb(52, 52, 52),rgb(0, 0, 0))";
+    document.getElementById("item3container").style.background = "linear-gradient(rgb(52, 52, 52),rgb(0, 0, 0))";
+    document.getElementById("item4container").style.background = "linear-gradient(rgb(52, 52, 52),rgb(0, 0, 0))";
 
     //  banner or image slider
     document.getElementById("slidermaindiv").style.border = "3px solid black";

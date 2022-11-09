@@ -35,7 +35,8 @@ body{
    margin-top: 100px;
    /* background-image: url(protruding-squareswhite.svg); */
     /* background: linear-gradient(rgba(135, 207, 235, 0.291),rgba(0, 251, 255, 0)); */
-    background-color: #e0d6ca;
+    /* background-color: #e0d6ca; */
+    background-color: #f4f4f4;
    /* background-size: contain; */
   
 }
@@ -43,9 +44,9 @@ body{
     position: fixed;
     top: 0;
     z-index: 100;
-    backdrop-filter: blur(3px);
    
-    background-color: #a1a783;
+   
+    background-color: white;
     width: 100%;
     height: 80px;
     display: flex;
@@ -133,14 +134,15 @@ background-size: contain;
     height: 7rem;
     border-radius: 30px;
     margin: 20px auto;
-    background-color: #2e30323d;
-    box-shadow: 0px 8px 10px rgba(128, 128, 128, 0.334);
+    /* background-color: #2e30323d; */
+    /* box-shadow: 0px 8px 10px rgba(128, 128, 128, 0.334); */
 }
 .designscontainer{
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content:space-between;
+  
    
     /* padding: 30px; */
     /* gap: 15px; */
@@ -176,12 +178,12 @@ background-size: contain;
 
 
 .design{
-    position: relative;
+
     width: 200px;
     height: 320px;
     /* backdrop-filter: blur(2px); */
     /* background-color: #2f2f2f94; */
-    background-color: #e9e9e9;
+    background: linear-gradient(to bottom,rgb(245, 245, 245),rgb(212, 212, 212),rgb(182, 182, 182));
     box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.142);
     /* border-radius: 20px; */
     display: flex;
@@ -191,24 +193,31 @@ background-size: contain;
     text-align: center;
     margin-bottom: 20px;
     overflow: hidden;
-    border-radius: 15px;
-
+    /* border-radius: 15px; */
+    transition: 1s ;
    
 } 
+.design:hover {
+    /* products flex hover  */
+    /* transform: translate(-2px, -10px); */
+   /* background-position:right; */
+   background: linear-gradient(to top,rgb(245, 245, 245),rgb(212, 212, 212),rgb(182, 182, 182));
+}
 .productdescription{
-    background-color: #c1af98;
+    
     height: 30%;
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    padding-left: 10px;
+    padding: 10px;
+    padding-top: 0;
     justify-content: space-evenly;
-    border-top-left-radius: 15px;
+    /* border-top-left-radius: 15px;
     border-top-right-radius: 15px;
     border-bottom-left-radius: 15px;
-    border-bottom-right-radius: 15px;
-    border: 2px solid white;
+    border-bottom-right-radius: 15px; */
+    /* border: 2px solid white; */
 
 
 }
@@ -218,8 +227,8 @@ background-size: contain;
   color: black;
   font-family: Whitney, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
-  font-weight: bold;
-  font-size: 1.5rem;
+  /* font-weight: bold; */
+  font-size: 1.2rem;
 
 
 }
@@ -260,7 +269,7 @@ background-size: contain;
 
 }
 .oldprize{
-    font-size: 2rem;
+    font-size: 1.3rem;
     font-weight: 700;
     color: black;
     font-family: Whitney, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
@@ -270,33 +279,36 @@ background-size: contain;
 .design-a-tag {
     text-decoration: none;
 }
-
+.viewbutton{
+    width: 100%;
+}
 .design  button {
     /* see details href button */
-   
-    background-color: transparent;
+   width: 60%;
+
+   height: 25px;
+    background-color: black;
     align-items: center;
     justify-content: center;
     cursor: pointer;
     text-decoration: none;
-    color: rgb(64, 46, 30);
+    color: rgb(255, 255, 255);
     border: none;
     font-size: 1rem;
     font-family: Whitney, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
     -webkit-font-smoothing: antialiased;
     font-weight: bold;
 }
-
-.design:hover {
-    /* products flex hover  */
-    /* transform: translate(-2px, -10px); */
-    transition-duration: 150ms;
-    /* box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.355); */
-
+.design button:hover{
+    background-color: #ed7a3c;
+    transition-duration: .4s;
 }
+
+
+
 /* footercode starts from here */
 footer {
-    background-color: #1c1c1c;
+    background-color: rgb(8, 8, 8);
     height: auto;
     width: 100%;
     padding-top: 40px;
@@ -566,5 +578,32 @@ footer {
         
     }
 }
+@media  (min-height:2000px) {
+    @media(min-width:800px){
 
+  
+    body{
+        
+        height: fit-content;
+       
+    }
+    .maincontainer{
+        height: 2000px;
+       
+    }
+    .design {
+        margin:60px;
+    }
+    .sliderdiv{ margin-top: 150px;
+        margin-bottom: 50px;
+    }
+    .landingpagecontainer{
+        height: 2500px;
+        background-color: white;
+    }
+    .thisisaxocean{
+        height: 2050px;
+    }
+}
+}
 /* responsive code above */
