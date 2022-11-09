@@ -59,12 +59,11 @@
       <!-- transparent button in navbar grid -->
       <!-- dropdown list code below -->
       <div class="dropdown">
-        <button class="dropbtn" onclick="myFunction(),topFunction()" id="rotatebtn">
+        <button class="dropbtn">
           <!-- <span id="hamburgerline1" class="span1">|</span>
         <span id="hamburgerline2">|</span>
         <span id="hamburgerline3" class="span3">|</span> -->
-          <i class="fas fa-bars" id="hamburger" onmouseover="hamburgerMouseOver()" onmouseout="hamburgerMouseOut()"
-            onclick="topFunction()"></i>
+          <i class="fas fa-bars" id="hamburger" onmouseover="hamburgerMouseOver()" onmouseout="hamburgerMouseOut()"  onclick="myFunction()" id="rotatebtn"></i>
         </button>
 
       </div>
@@ -80,14 +79,19 @@
   <!-- dropdown list code here -->
 
   <div class="dropdownlist" id="ddlist">
+    <div class="firstlinkcontainer">
     <a href="" id="dropdownlistlink1" class="dropdownlink link1" onmouseover="hoverIn()"
-      onmouseout="hoverOut()">PRODUCTS</a>
+      onmouseout="hoverOut()">PRODUCTS</a> <button id="exitbutton" onclick="hidedropdownFunction()" onmouseover="exitbuttonAddcolor()" onmouseout="exitbuttonRemovecolor()">&#10005;</button></div>
+      <div>
     <a href="" id="dropdownlistlink2" class="dropdownlink link2" onmouseover="hoverIn2()"
-      onmouseout="hoverOut2()">SPECIAL</a>
+      onmouseout="hoverOut2()">SPECIAL</a></div>
+      <div>
     <a href="" id="dropdownlistlink3" class="dropdownlink link3" onmouseover="hoverIn3()"
-      onmouseout="hoverOut3()">ABOUT</a>
+      onmouseout="hoverOut3()">ABOUT</a></div>
+      <div>
     <a href="" id="dropdownlistlink4" class="dropdownlink link4" onmouseover="hoverIn4()" onmouseout="hoverOut4()">GO TO
-      FLIPKART</a>
+      FLIPKART</a></div>
+      
   </div>
 
   <!-- dropdown list code ends here -->

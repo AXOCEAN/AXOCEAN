@@ -27,14 +27,14 @@ contactIcon.addEventListener("click", () => {
   formContainer.classList.toggle("active");
 });
 
-let DisableTag = document.getElementById('itematag')
+// for floating contect form
 window.addEventListener("click", (e) => {
   if (!formContainer.classList.contains("active")) return;
   if (e.target.matches(".floating-contact-form *")
     || e.target.matches(".floating-contact-form .contact-icon *")
   ) return;
   formContainer.classList.toggle("active");
-  DisableTag.disabled = true;
+ 
 });
 
 
@@ -51,17 +51,34 @@ formInputs.forEach((i) => {
     }
   }); 
 });
-
+//dropdownlist toggle 
 function myFunction() {
   document.getElementById("ddlist").classList.toggle("show")
   document.getElementById("rotatebtn").classList.toggle("rotate")
+}
+// function hidedropdownFunction(){
+//   document.getElementById("ddlist").classList.remove("show")
+// }
+
+window.addEventListener("click",hidedropdownList) 
+function hidedropdownList(e){
+  if(!e.target.matches('.fas') || e.target.matches('.dropbtn') ){
+    var dropdowns = document.getElementsByClassName("dropdownlist");
+    var i;
+    for(i= 0; i < dropdowns.length; i++){
+      var openDropdown = dropdowns[i];
+      if(openDropdown.classList.contains("show")){
+        openDropdown.classList.remove("show");
+      }
+    }
+  }
 }
 
 
 // mouse hover on dropdownlist
 // link 1
 function hoverIn() {
-  document.getElementById("dropdownlistlink1").style.color = "#009da5";
+  document.getElementById("dropdownlistlink1").style.color = "#ed7a3c";
 }
 function hoverOut() {
   if (document.getElementById('switch').checked == false) {
@@ -73,7 +90,7 @@ function hoverOut() {
 }
 // link 2
 function hoverIn2() {
-  document.getElementById("dropdownlistlink2").style.color = "#009da5";
+  document.getElementById("dropdownlistlink2").style.color = "#ed7a3c";
 }
 function hoverOut2() {
   if (document.getElementById('switch').checked == false) {
@@ -85,7 +102,7 @@ function hoverOut2() {
 }
 //  link 3
 function hoverIn3() {
-  document.getElementById("dropdownlistlink3").style.color = "#009da5";
+  document.getElementById("dropdownlistlink3").style.color = "#ed7a3c";
 }
 function hoverOut3() {
   if (document.getElementById('switch').checked == false) {
@@ -97,7 +114,7 @@ function hoverOut3() {
 }
 //  link 4
 function hoverIn4() {
-  document.getElementById("dropdownlistlink4").style.color = "#009da5";
+  document.getElementById("dropdownlistlink4").style.color = "#ed7a3c";
 }
 function hoverOut4() {
   if (document.getElementById('switch').checked == false) {
@@ -112,7 +129,7 @@ function hoverOut4() {
 
 // Code of hamburger hover effects starts from here
 function hamburgerMouseOver() {
-  document.getElementById("hamburger").style.color = "rgb(90, 78, 12)";
+  document.getElementById("hamburger").style.color = "#ed7a3c";
 }
 function hamburgerMouseOut() {
   if (document.getElementById('switch').checked == false) {
@@ -120,6 +137,18 @@ function hamburgerMouseOut() {
   }
   else {
     document.getElementById("hamburger").style.color = "white";
+  }
+}
+// exit button hover effect------
+function exitbuttonAddcolor() {
+  document.getElementById("exitbutton").style.color = "#ed7a3c";
+}
+function exitbuttonRemovecolor() {
+  if (document.getElementById('switch').checked == false) {
+    document.getElementById("exitbutton").style.color = "black";
+  }
+  else {
+    document.getElementById("exitbutton").style.color = "white";
   }
 }
 
@@ -218,10 +247,10 @@ function appearanceMOde() {
    document.getElementById("oldprize3").style.color = "#212121";
    document.getElementById("oldprize4").style.color = "#212121";
 
-   document.getElementById("newprize1").style.color = "black";
-   document.getElementById("newprize2").style.color = "black";
-   document.getElementById("newprize3").style.color = "black";
-   document.getElementById("newprize4").style.color = "black";
+   document.getElementById("newprize1").style.color = "#ed7a3c";
+   document.getElementById("newprize2").style.color = "#ed7a3c";
+   document.getElementById("newprize3").style.color = "#ed7a3c";
+   document.getElementById("newprize4").style.color = "#ed7a3c";
 
 
     // items h1 and button 
@@ -273,7 +302,8 @@ function appearanceMOde() {
     // slider div box shadow
     document.getElementById("slidermaindiv").style.boxShadow = "1px 2px 10px gray";
     // dropdownlist
-    document.getElementById("ddlist").style.backgroundColor = "rgba(254, 254, 254, 0.793)";
+    document.getElementById("exitbutton").style.color = "black";
+    document.getElementById("ddlist").style.backgroundColor = "#f4f4f4a0";
     document.getElementById("dropdownlistlink1").style.color = "black";
     document.getElementById("dropdownlistlink2").style.color = "black";
     document.getElementById("dropdownlistlink3").style.color = "black";
@@ -359,22 +389,23 @@ document.getElementById("oldprize2").style.color = "#adadad";
 document.getElementById("oldprize3").style.color = "#adadad";
 document.getElementById("oldprize4").style.color = "#adadad";
 
-document.getElementById("newprize1").style.color = "white";
-document.getElementById("newprize2").style.color = "white";
-document.getElementById("newprize3").style.color = "white";
-document.getElementById("newprize4").style.color = "white";
+document.getElementById("newprize1").style.color = "#ed7a3c";
+document.getElementById("newprize2").style.color = "#ed7a3c";
+document.getElementById("newprize3").style.color = "#ed7a3c";
+document.getElementById("newprize4").style.color = "#ed7a3c";
 
     //   items or product containers
-    document.getElementById("item1container").style.background = "linear-gradient(rgb(52, 52, 52),rgb(0, 0, 0))";
-    document.getElementById("item2container").style.background = "linear-gradient(rgb(52, 52, 52),rgb(0, 0, 0))";
-    document.getElementById("item3container").style.background = "linear-gradient(rgb(52, 52, 52),rgb(0, 0, 0))";
-    document.getElementById("item4container").style.background = "linear-gradient(rgb(52, 52, 52),rgb(0, 0, 0))";
+    document.getElementById("item1container").style.background = "linear-gradient(rgb(14, 14, 14),rgb(14, 14, 14))";
+    document.getElementById("item2container").style.background = "linear-gradient(rgb(14, 14, 14),rgb(14, 14, 14))";
+    document.getElementById("item3container").style.background = "linear-gradient(rgb(14, 14, 14),rgb(14, 14, 14))";
+    document.getElementById("item4container").style.background = "linear-gradient(rgb(14, 14, 14),rgb(14, 14, 14))";
 
     //  banner or image slider
     document.getElementById("slidermaindiv").style.border = "3px solid black";
 
     // dropdownlist
-    document.getElementById("ddlist").style.backgroundColor = "rgba(1, 1, 1, 0.793)";
+    document.getElementById("exitbutton").style.color = "white";
+    document.getElementById("ddlist").style.backgroundColor = "#030303a0";
     document.getElementById("dropdownlistlink1").style.color = "white";
     document.getElementById("dropdownlistlink2").style.color = "white";
     document.getElementById("dropdownlistlink3").style.color = "white";

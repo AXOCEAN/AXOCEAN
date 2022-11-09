@@ -370,14 +370,20 @@ body {
 }
 
 .dropdownlist {
-    background-color: rgb(254, 254, 254);
-    width: 100%;
-    height: 200px;
-    display: none;
-    padding-top: 10px;
+    background-color:#f4f4f4a0;
    
+    width: 50%;
+    height: 100%;
+    backdrop-filter: blur(5px);
+    
+    display: none;
+   position: fixed;
+   top: 0px;
+   right: 0px;
+   z-index: 105;
     text-align: center;
     animation: dropdownlist .2s linear;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.29);
 }
 
 @keyframes dropdownlist {
@@ -404,16 +410,49 @@ body {
 
 @keyframes dropdownlink {
     0% {
-        margin-left: -300px;
+        margin-right: -300px;
     }
 }
+.firstlinkcontainer{
+    position: relative;
+
+}
+
+.dropdownlist div{
+    height: 25%;
+    display: flex;
+    flex-direction: column;
+    /* border: 1px solid black; */
+    justify-content: center;
+}
+#exitbutton{
+    position: absolute;
+    top: 10px;
+    right: 5px; 
+    height: 50px;
+    width: 50px;
+    border: none;
+    background-color: transparent;
+    font-size: 3.6rem;
+    font-weight: 900;
+    transition: all .4s;
+
+}
+#exitbutton:hover{
+    color: #ed7a3c;
+}
+
 
 .dropdownlist a {
     display: block;
     font-size: 2rem;
     text-decoration: none;
+    /* background-color: #00659b; */
     color: black;
     font-weight: bolder;
+    height: 45px;
+    text-align: center;
+    /* border: 1px solid black; */
     font-family: Whitney, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
     padding: 10px;
     transition-duration: .2s;
@@ -507,6 +546,8 @@ body {
     font-weight: 600;
     font-family: Whitney, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
     -webkit-font-smoothing: antialiased;
+    letter-spacing: 3px;
+    
 }
 
 /* Product heading code above */
@@ -528,6 +569,7 @@ body {
    
     /* background-color: #2f2f2f3e; */
     background: linear-gradient(rgb(236, 236, 236),rgb(203, 203, 203));
+   
 
     box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.142);
     /* border-radius: 20px; */
@@ -550,7 +592,7 @@ body {
 }
 .newprize{
     font-size: 2.5rem;
-    color: black;
+    color: #ed7a3c;
     font-weight: 700;
     font-family: Whitney, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
     -webkit-font-smoothing: antialiased;
@@ -635,10 +677,14 @@ body {
     font-family: Whitney, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
     -webkit-font-smoothing: antialiased;
     font-weight: bold;
+    letter-spacing: 3px;
+   
 }
 .items button:hover{
     background-color: #0c161c;
     color: #ed7a3c;
+    letter-spacing: 5px;
+    transition: all.3s;
 }
 
 .items:hover {
@@ -1085,7 +1131,14 @@ footer {
     }
 
     .dropdownlist {
-        height: 180px;
+        height: 100%;
+    }
+    .dropdownlist div{
+        height: 10%;
+    }
+    #exitbutton{
+        top: 2px;
+        right: 2px;
     }
 
     html {
