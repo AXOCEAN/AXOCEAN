@@ -52,10 +52,10 @@ body {
     top: 0;
     position: fixed;
     /* background: linear-gradient(#49506d,#34514b); */
-    background-color: rgba(222, 252, 255, 0.253);
+    background-color: rgb(253, 253, 253);
     /* backdrop-filter: blur(15px); */
     /* background-image: url("darkpattern.jpg"); */
-    background-image:url("page-turner.svg");
+  
     background-image: url("LPbackgroundfulllandscape.jpg");
 
     background-size: cover;
@@ -1267,8 +1267,8 @@ footer {
 
     }
 }
-    @media  (min-height:2000px) {
-        @media(min-width:800px){
+    @media  (min-height:1800px) {
+        @media(min-width:500px){
 
       
         body{
@@ -1287,11 +1287,11 @@ footer {
             margin-bottom: 50px;
         }
         .landingpagecontainer{
-            height: 2500px;
+            height: 2000px;
             background-color: white;
         }
         .thisisaxocean{
-            height: 2050px;
+            height: 1500px;
         }
     }
     }

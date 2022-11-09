@@ -578,8 +578,8 @@ footer {
         
     }
 }
-@media  (min-height:2000px) {
-    @media(min-width:800px){
+@media  (min-height:1800px) {
+    @media(min-width:500px){
 
   
     body{
