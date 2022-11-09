@@ -56,23 +56,11 @@ function myFunction() {
   document.getElementById("ddlist").classList.toggle("show")
   document.getElementById("rotatebtn").classList.toggle("rotate")
 }
-// function hidedropdownFunction(){
-//   document.getElementById("ddlist").classList.remove("show")
-// }
-
-window.addEventListener("click",hidedropdownList) 
-function hidedropdownList(e){
-  if(!e.target.matches('.fas') || e.target.matches('.dropbtn') ){
-    var dropdowns = document.getElementsByClassName("dropdownlist");
-    var i;
-    for(i= 0; i < dropdowns.length; i++){
-      var openDropdown = dropdowns[i];
-      if(openDropdown.classList.contains("show")){
-        openDropdown.classList.remove("show");
-      }
-    }
-  }
+function hidedropdownFunction(){
+  document.getElementById("ddlist").classList.remove("show")
 }
+
+
 
 
 // mouse hover on dropdownlist

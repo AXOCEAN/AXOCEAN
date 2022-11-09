@@ -371,11 +371,10 @@ body {
 
 .dropdownlist {
     background-color:#f4f4f4a0;
-   
     width: 50%;
     height: 100%;
-    backdrop-filter: blur(5px);
-    
+    backdrop-filter: blur(15px);
+    padding: 50px;
     display: none;
    position: fixed;
    top: 0px;
@@ -415,6 +414,7 @@ body {
 }
 .firstlinkcontainer{
     position: relative;
+    
 
 }
 
@@ -1132,6 +1132,7 @@ footer {
 
     .dropdownlist {
         height: 100%;
+        width: 100%;
     }
     .dropdownlist div{
         height: 10%;
