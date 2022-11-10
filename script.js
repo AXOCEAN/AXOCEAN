@@ -54,7 +54,7 @@ formInputs.forEach((i) => {
 //dropdownlist toggle 
 function myFunction() {
   document.getElementById("ddlist").classList.toggle("show")
-  document.getElementById("rotatebtn").classList.toggle("rotate")
+  // document.getElementById("rotatebtn").classList.toggle("rotate")
 }
 function hidedropdownFunction(){
   document.getElementById("ddlist").classList.remove("show")

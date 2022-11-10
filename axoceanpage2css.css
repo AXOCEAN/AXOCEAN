@@ -96,16 +96,136 @@ body{
 }
 
 /* Dropdown Button */
+
+.fas {
+    font-size: 2.5rem;
+}
+
+
+/* Dropdown Button */
 .dropbtn {
     background-color: transparent;
-    color: transparent;
     padding: 12px 16px;
-    font-size: 2.5rem;
-    font-family: Whitney, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
-    -webkit-font-smoothing: antialiased;
-    font-weight: bold;
     border: none;
+    transition-duration: .3s;
 }
+
+.dropbtn span {
+    font-size: 2rem;
+}
+
+.rotate {
+    transform: rotate(270deg);
+
+}
+
+.dropdownlist {
+    background-color:#f4f4f4a0;
+    width: 50%;
+    height: 100%;
+    backdrop-filter: blur(15px);
+    padding: 50px;
+    display: none;
+   position: fixed;
+   top: 0px;
+   right: 0px;
+   z-index: 105;
+    text-align: center;
+    animation: dropdownlist .2s linear;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.29);
+}
+
+@keyframes dropdownlist {
+    0% {
+        width: 0;
+    } 
+}
+
+.link1 {
+    animation: dropdownlink .2s linear;
+}
+
+.link2 {
+    animation: dropdownlink .3s linear;
+}
+
+.link3 {
+    animation: dropdownlink .4s linear;
+}
+
+.link4 {
+    animation: dropdownlink .5s linear;
+}
+
+@keyframes dropdownlink {
+    0% {
+        margin-right: -300px;
+    }
+}
+.firstlinkcontainer{
+    position: relative;
+    
+
+}
+
+.dropdownlist div{
+    height: 25%;
+    display: flex;
+    flex-direction: column;
+    /* border: 1px solid black; */
+    justify-content: center;
+}
+#exitbutton{
+    position: absolute;
+    top: 10px;
+    right: 5px; 
+    height: 50px;
+    width: 50px;
+    border: none;
+    background-color: transparent;
+    font-size: 3.6rem;
+    font-weight: 900;
+    transition: all .4s;
+    color: #ed7a3c;
+
+}
+#exitbutton:hover{
+    color: #ed7a3c;
+}
+
+
+.dropdownlist a {
+    display: block;
+    font-size: 2rem;
+    text-decoration: none;
+    /* background-color: #00659b; */
+    color: black;
+    font-weight: bolder;
+    height: 45px;
+    text-align: center;
+    /* border: 1px solid black; */
+    font-family: Whitney, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+    padding: 10px;
+    transition-duration: .2s;
+}
+
+
+.show {
+    display: block;
+}
+
+.dropdownlist a:hover {
+    letter-spacing: 5px;
+    color: #ed7a3c;
+}
+
+.fas:hover {
+    /* color: #0fa7c6; */
+    color: #ed7a3c;
+
+}
+
+/* ------------------------------------------------------------------------------------------------- */
 
 .maincontainer{
 
@@ -230,7 +350,8 @@ position: relative;
 
 .design h1 {
   /* for product heading */
-  width: 90%;
+  width: 100%;
+
   white-space: nowrap;
   color: black;
   font-family: Whitney, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
@@ -260,8 +381,9 @@ position: relative;
 
 .design h3 {
     /* for product description */
-width: 100%;
+    width: 100%;
     color: rgb(0, 0, 0);
+  
     font-weight:300;
     font-family: Whitney, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
     -webkit-font-smoothing: antialiased;
@@ -275,13 +397,14 @@ width: 100%;
     text-align: center;
 
     width: 100%;
-    padding-right: 15px;
+   
 
 }
 .oldprize{
     font-size: 1.8rem;
     font-weight: 700;
     width: 100%;
+ 
   color: #ed7a3c;
     font-family: Whitney, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
     -webkit-font-smoothing: antialiased;
@@ -511,6 +634,17 @@ footer {
     .heading {
         font-size: 3rem;
 
+    }
+    .dropdownlist {
+        height: 100%;
+        width: 100%;
+    }
+    .dropdownlist div{
+        height: 10%;
+    }
+    #exitbutton{
+        top: 2px;
+        right: 2px;
     }
 }
 
