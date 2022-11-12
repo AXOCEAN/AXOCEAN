@@ -112,7 +112,6 @@ function hoverOut4() {
     document.getElementById("dropdownlistlink4").style.color = "white";
   }
 }
-
 // Code Of Mouse hover on dropdown list links ends here ----->
 
 // Code of hamburger hover effects starts from here
@@ -422,24 +421,7 @@ function topFunction() {
   document.body.scropllTop = 0;
   document.documentElement.scrollTop = 0;
 }
-// loading page
 
-let scrollBtn = document.getElementById("letsgo");
-let landingPage = document.getElementById("landingpage");
-let landingPagenav = document.getElementById("landingpagenav");
-
-
-scrollBtn.addEventListener("change",scrollUpfunction)
-function scrollUpfunction(){
-  if(scrollBtn.checked){
-    landingPage.style.height ="0"
-   document.getElementById("landingpagenav").style.display = "none"
-   document.getElementById("landingpagenav").style.display = "none"
-   document.getElementById("thisisaxocean").style.display = "none"
-   document.getElementById("letsgocontainer").style.display = "none"
-   document.body.style.overflow ="visible"
-  }
-}
 
 
  
