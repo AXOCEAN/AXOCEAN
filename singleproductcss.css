@@ -32,7 +32,7 @@ html {
 
 body{
     background-color: #f4f4f4;
-    margin-top: 100px;
+   
 }
 .nav_bar {
     /* background-color: #fff; */
@@ -47,7 +47,12 @@ body{
     justify-content: space-between;
     box-shadow: 0px 0px 10px 0.1px gray;
 }
-
+.nav_bar2 {
+    background-color: transparent;
+    width: 100%;
+    height: 80px;
+   
+}
 .btn {
     /* for Home button logo */
     background-color: transparent;
@@ -210,7 +215,6 @@ body{
 
 .productdetailscontainer{
     background-color: #dadada;
-    padding-top: 20px;
     padding-bottom: 40px;
     height: fit-content;
 
@@ -218,9 +222,9 @@ body{
 
 .productdetailsheading{
     
-    background-color: transparent;
+    background-color:transparent;
     width: 100%;
-    height: fit-content;
+    height: 100px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -239,13 +243,14 @@ body{
 
     width: 90%;
     height: fit-content;
-    margin:20px auto;
+    margin: auto;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
     background-color: transparent;
-    padding:5px;
+    padding-left:5px;
+    padding-right:5px;
     /* overflow: hidden; */
 
 }
@@ -291,7 +296,7 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    background-color: #f4f4f4;
+    background-color: white;
     box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.281);
 }
 .title{
@@ -364,6 +369,7 @@ body{
     justify-content: center;
     gap: 20px;
 border-bottom: 2px solid rgb(255, 253, 253);
+border-top: 2px solid rgb(255, 253, 253);
 
 }
 
@@ -528,6 +534,11 @@ footer {
         width: 100%;
         height: 80px;
     }
+    .nav_bar2 {
+        width: 100%;
+        height: 80px;
+    }
+
 
     .heading {
         font-size: 3rem;
@@ -544,6 +555,10 @@ footer {
         width: 100%;
         height: 80px;
     }
+    .nav_bar2 {
+        width: 100%;
+        height: 80px;
+    }
 
     .heading {
         font-size: 3rem;
@@ -556,6 +571,10 @@ footer {
         font-size: 55%;
     }
     .nav_bar {
+        width: 100%;
+        height: 80px;
+    }
+    .nav_bar2 {
         width: 100%;
         height: 80px;
     }
@@ -617,6 +636,10 @@ footer {
         width: 100%;
         height: 80px;
     }
+    .nav_bar2 {
+        width: 100%;
+        height: 80px;
+    }
 
     .heading {
         font-size: 3.5rem;
@@ -631,6 +654,11 @@ footer {
     }
 
     .nav_bar {
+        width: 100%;
+        height: 60px;
+    }
+    
+    .nav_bar2 {
         width: 100%;
         height: 60px;
     }
@@ -650,6 +678,10 @@ footer {
         font-size: 40%;
     }
     .nav_bar {
+        width: 100%;
+        height: 60px;
+    }
+    .nav_bar2 {
         width: 100%;
         height: 60px;
     }
