@@ -154,8 +154,8 @@ function seedetails1colorresetFunction() {
     document.getElementById("item1-button").style.backgroundColor = "black";
   }
   else {
-    document.getElementById("item1-button").style.color = "black";
-    document.getElementById("item1-button").style.backgroundColor = "white";
+    document.getElementById("item1-button").style.color = "white";
+    document.getElementById("item1-button").style.backgroundColor = "black";
   }
 }
 
@@ -170,8 +170,8 @@ function seedetails2colorresetFunction() {
     document.getElementById("item2-button").style.backgroundColor = "black";
   }
   else {
-    document.getElementById("item2-button").style.color = "black";
-    document.getElementById("item2-button").style.backgroundColor = "white";
+    document.getElementById("item2-button").style.color = "white";
+    document.getElementById("item2-button").style.backgroundColor = "black";
   }
 }
 //button -3
@@ -185,8 +185,8 @@ function seedetails3colorresetFunction() {
     document.getElementById("item3-button").style.backgroundColor = "black";
   }
   else {
-    document.getElementById("item3-button").style.color = "black";
-    document.getElementById("item3-button").style.backgroundColor = "white";
+    document.getElementById("item3-button").style.color = "white";
+    document.getElementById("item3-button").style.backgroundColor = "black";
   }
 }
 //button -4
@@ -200,8 +200,8 @@ function seedetails4colorresetFunction() {
     document.getElementById("item4-button").style.backgroundColor = "black";
   }
   else {
-    document.getElementById("item4-button").style.color = "black";
-    document.getElementById("item4-button").style.backgroundColor = "white";
+    document.getElementById("item4-button").style.color = "white";
+    document.getElementById("item4-button").style.backgroundColor = "black";
   }
 }
 
@@ -212,10 +212,10 @@ function appearanceMOde() {
     document.body.style.backgroundColor = "#f4f4f4";
     // navbar
 
-    document.getElementById("navbar").style.backgroundColor = "white";
-    document.getElementById("navbar").style.boxShadow = " 0px 0px 10px 0.1px gray";
+    // document.getElementById("navbar").style.backgroundColor = "white";
+    // document.getElementById("navbar").style.boxShadow = " 0px 0px 10px 0.1px gray";
 
-    document.getElementById("heading").style.color = "black";
+    // document.getElementById("heading").style.color = "black";
 
 
 
@@ -315,21 +315,21 @@ function appearanceMOde() {
     document.body.style.backgroundColor ="#1b1b25"
 
     // navbar
-    document.getElementById("navbar").style.backgroundColor = "#0B0C10";
-    document.getElementById("heading").style.color = "white";
-    document.getElementById("navbar").style.boxShadow = " 0px 0px 10px 0.1px black";
+    // document.getElementById("navbar").style.backgroundColor = "#0B0C10";
+    // document.getElementById("heading").style.color = "white";
+    // document.getElementById("navbar").style.boxShadow = " 0px 0px 10px 0.1px black";
 
 
     // hamburger lines
     // document.getElementById("hamburgerline1").style.color = "white";
     // document.getElementById("hamburgerline2").style.color = "white";
     // document.getElementById("fas").style.color = "white";
-    document.getElementById("hamburger").style.color = "white";
+    // document.getElementById("hamburger").style.color = "white";
 
 
 
     // homebutton 
-    document.getElementById("homebtn").style.color = "white";
+    // document.getElementById("homebtn").style.color = "white";
 
     // slider div box shadow
     document.getElementById("slidermaindiv").style.boxShadow = "0px 8px 10px rgba(1, 1, 1, 0.334)";
