@@ -32,8 +32,9 @@ html {
 body {
     width: 100%;
     /* background-image:url("protruding-squareswhite.svg"); */
-    background-color: #f4f4f4;
-    margin-top: 80px;
+    background-color: white;
+    /* margin-top: 80px; */
+    margin-top: 0;
     
 }
 
@@ -47,10 +48,9 @@ body {
 } */
 .landingpagecontainer{
     width: 100%;
-    height: 900px;
-    z-index: 9999;
+    height: 700px;
+    /* z-index: 97; */
     top: 0;
-    position: fixed;
     /* background: linear-gradient(#49506d,#34514b); */
     background-color: rgb(253, 253, 253);
     /* backdrop-filter: blur(15px); */
@@ -61,9 +61,53 @@ body {
     background-size: cover;
     opacity: 1;
     transition: all 500ms ease;
+    display: flex;
+    flex-direction:column-reverse;
+
+}
+.landingpagedetails{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 18%;
+    background-color:transparent;
+    justify-content:space-between;
+    padding: 20px;
+}
+.howmuchoff{
+    font-size: 2rem;
+    color:black;
+    font-weight:700;
+    font-family: Whitney, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+}
+.flipkartbutton{
+    font-size: 2rem;
+    color: black;
+    font-weight:700;
+    font-family: Whitney, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+    text-decoration:underline;
+}
+.view_product_button{
+    font-size: 2rem;
+    color: black;
+    font-weight: 800;
+    font-family: Whitney, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+    border: 1px solid black;
+    width: fit-content;
+    padding: 10px;
+    background-color: transparent;
+    cursor: pointer;
+    transition-duration: .3s;
+}
+.view_product_button:hover{
+    color:#ed7a3c;
+    border:1px solid #ed7a3c ;
+    background-color: rgba(0, 0, 0);
+    font-size: 2rem;
+    font-weight: 800;
 }
 
-.landingpagenav{
+/* .landingpagenav{
     height: 80px;
     width: 100%;
     display: flex;
@@ -72,49 +116,9 @@ body {
     align-items: center;
     padding: 20px;
    
-}
-#LpHeading{
-    color: rgb(68, 92, 96);
-    /* text-shadow: 0px 0px 10px rgb(253, 253, 253), */
-    /* 0px 0px 10px rgb(20, 20, 20); */
-    font-size: 3rem;
-    font-family: Whitney, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
-    font-weight: 800;
-}
-.smallnav{
-    display: flex;
-    justify-content: space-between;
-    width: 25%;
-}
-.smallnav span{
-    color: black;
-    font-size: 1.5rem;
-    font-family: Whitney, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
-    font-weight: 600;
+} */
 
-}
-.smallnav span:hover{
-    /* text-shadow: 0px 0px 10px rgb(212, 252, 255),
-    0px 0px 10px rgb(212, 252, 255);; */
-    color: rgb(43, 72, 72);
-   
-}
-.LpFlipkart{
-    height: 50px;
-    width: 100px;
-    border-radius: 10px;
-    border: none;
-    background-color: rgb(236, 196, 0);
-    color: white;
-    font-weight: 700;
-    font-family: Whitney, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
-}
-.LpFlipkart:hover{
-    background-color: rgb(214, 175, 4);
-    box-shadow: 0px 0px 10px yellow,
-    0px 0px 10px yellow;
-}
-.thisisaxocean{
+/* .thisisaxocean{
     width: 100%;
     height: 600px;
     display: flex;
@@ -122,8 +126,8 @@ body {
     align-items: center;
     justify-content: center;
   
-}
-#bigheading{
+} */
+/* #bigheading{
     font-size: 9rem;
     text-align: center;
     color: black;
@@ -133,8 +137,8 @@ body {
     word-spacing: 5px;
   
 
-}
-#thisis{
+} */
+/* #thisis{
     font-size: 7rem;
     text-align: center;
     color: black;
@@ -143,8 +147,8 @@ body {
     letter-spacing: 3px;
     word-spacing: 5px;
    
-}
-#slogan{
+} */
+/* #slogan{
     font-size: 2rem;
     text-align: center;
     color: black;
@@ -153,8 +157,8 @@ body {
     font-style: italic;
     font-family: Whitney, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
    
-}
-#hairaccessories{
+} */
+/* #hairaccessories{
     text-align: center;
     font-size: 1rem;
     color: rgb(0, 0, 0);
@@ -163,139 +167,13 @@ body {
     letter-spacing: 3px;
     word-spacing: 5px;
     padding: 0px 20px;
-}
-.letsgocontainer{
-    position: relative;
-    width: 100%;
-    height: 140px;
-    display: flex;
-    align-items: flex-end;
-    justify-content: center;
-    padding-bottom:25px;
-   
-    
-}
-#letsgo{
-    display: none;
-}
-/* #letsgo{
-    width: 150px;
-    height: 45px;
-    appearance: none;
-   
-    background-color: transparent;
-    border: none;
-}
-#letsgo:active::-webkit-slider-thumb{
-
-    
-  
-     cursor: -webkit-grabbing;
-    cursor: -moz-grabbing; 
-    background-color: transparent;
-}
-#letsgo:focus{
-    outline: none;
-}
-#letsgo::-webkit-slider-runnable-track{
-    position: relative;
-    height: 40px;
-    padding: 0.25rem;
-    box-sizing: content-box;
-    
-    background-color: rgba(142, 142, 142, 0.093);
-    border-radius: 50px;
-  
-  
-    border: 2px solid black;
-    cursor: pointer;
-}
-#letsgo::-webkit-slider-thumb{
-    position: absolute;
-    z-index: 999;
-    appearance: none;
-   
-    width: 46px;
-    height: 47px;
-   
-    left: 0px;
-    bottom: 0px;
-    border: none;
-
-}
-
-#slide{
-    position: absolute;
-    bottom: 37px;
-    z-index: 1;
-    font-size: medium;
-    font-weight: 600;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    
-    color: rgb(0, 0, 0);
-   
-}
-@keyframes slide{
-    0%{
-        margin-right:40px ;
-    }
-    35%{
-        margin-left:0px ;
-    }
-    50%{
-        margin-right:40px ;
-    }
-   
- 
-    
 } */
 
- #letsgolabel{
-    color: black;
-    font-size: 2rem;
-    font-family: Whitney, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
-    font-weight:800;
-    border: 2px solid black;
-    height: 50px;
-    width: 250px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 5px;
-    /* box-shadow: 0px 0px 10px rgb(84, 209, 199), 
-   0px 0px 10px rgb(84, 209, 199) inset ;  */
-    animation: letsgolabel 2s infinite ease-out; 
-    cursor: pointer; 
- }  
-
- @keyframes letsgolabel{
-    0%{
-       margin-top: 10px;
-    }
-   
-    50%{
-        margin-bottom: 10px;
-    }
-   
-    75%{
-        margin-top: 10px;
-    }
-
-} 
- #letsgolabel:hover{
-   color: #59478f;
-   border: 2px solid #59478f;
-
-    
-   
-}
-#letsgolabel i{
-    font-size: 2rem;
-} 
 
 .nav_bar {
     /* background-color: #fff; */
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.388);
+    backdrop-filter: blur(15px);
     position: fixed;
     top: 0;
     z-index: 98;
@@ -304,7 +182,13 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    box-shadow: 0px 0px 10px 0.1px gray;
+    /* box-shadow: 0px 0px 10px 0.1px gray; */
+}
+.nav_bar2 {
+    background-color: transparent;
+    width: 100%;
+    height: 80px;
+   
 }
 
 .btn {
@@ -514,8 +398,9 @@ body {
 /* product heading background transparent below */
 .productmain {
     height: 7rem;
+    margin-top: 20px;
     width: 100%;
-    background-color: transparent;
+    
     display: flex;
     align-items: center;
     justify-content: center;
@@ -557,6 +442,7 @@ body {
     justify-content: space-around;
     padding: 25px;
     flex-wrap: wrap;
+    gap: 20px;
 }
 
 .items {
@@ -573,8 +459,7 @@ body {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-   
-    margin-bottom: 20px;
+    /* margin-bottom: 20px; */
     transition-duration: .3s;
 }
 .oldprize{
@@ -1066,7 +951,10 @@ footer {
         width: 100%;
         height: 80px;
     }
-
+    .nav_bar2 {
+        width: 100%;
+        height: 80px;
+    }
     .heading {
         font-size: 3rem;
 
@@ -1102,6 +990,10 @@ footer {
         width: 100%;
         height: 80px;
     }
+    .nav_bar2 {
+        width: 100%;
+        height: 80px;
+    }
 
     .heading {
         font-size: 3rem;
@@ -1128,9 +1020,7 @@ footer {
 
 @media screen and (max-width:998px) {
 
-    body {
-        margin-top: 60px;
-    }
+   
 
     .dropdownlist {
         height: 100%;
@@ -1151,6 +1041,10 @@ footer {
     }
 
     .nav_bar {
+        width: 100%;
+        height: 80px;
+    }
+    .nav_bar2 {
         width: 100%;
         height: 80px;
     }
@@ -1195,6 +1089,10 @@ footer {
         width: 100%;
         height: 80px;
     }
+    .nav_bar2{
+        width: 100%;
+        height: 80px;
+    }
 
     .heading {
         font-size: 3.5rem;
@@ -1233,6 +1131,10 @@ footer {
     }
 
     .nav_bar {
+        width: 100%;
+        height: 60px;
+    }
+    .nav_bar2 {
         width: 100%;
         height: 60px;
     }
@@ -1279,6 +1181,10 @@ footer {
         width: 100%;
         height: 60px;
     }
+    .nav_bar2{
+        width: 100%;
+        height: 60px;
+    }
 
     .heading {
         font-size: 3rem;
@@ -1307,6 +1213,10 @@ footer {
     }
 
     .nav_bar {
+        width: 100%;
+        height: 60px;
+    }
+    .nav_bar2{
         width: 100%;
         height: 60px;
     }

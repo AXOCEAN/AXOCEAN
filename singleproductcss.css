@@ -34,6 +34,7 @@ html {
 
 body{
     background-color: #f4f4f4;
+    width: 100%;
    
    
 }
@@ -596,11 +597,11 @@ border-top: 2px solid rgb(255, 253, 253);
        
     
     }
-    .oldprize{
+    .prize{
         font-size: 1.8rem;
         font-weight: 700;
         width: 100%;
-     
+     text-decoration: none;
       color: #ed7a3c;
         font-family: Whitney, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
         -webkit-font-smoothing: antialiased;
@@ -636,17 +637,13 @@ border-top: 2px solid rgb(255, 253, 253);
        
     }
 
-
 /* footercode starts from here */
 footer {
-    
-    /* background-color: #1c1c1c; */
     background-color: rgb(8, 8, 8);
-    height:auto;
+    height: auto;
     width: 100%;
     padding-top: 40px;
     color: #fff;
-    /* margin-top: 50px; */
 }
 
 .footercontainer {
@@ -732,12 +729,13 @@ footer {
     color: rgb(101, 160, 255);
 }
 
+
+
+
 .footerbottom {
     background-color: #02040600;
-   
-
+    /* background-color: red; */
     width: 100%;
-   
     padding: 20px 0;
     text-align: center;
     display: flex;
@@ -755,6 +753,7 @@ footer {
     -webkit-font-smoothing: antialiased;
     color: #c6c6c6;
 }
+
 #backtotopbutton{
     display: none;
     position: fixed;
@@ -781,6 +780,11 @@ footer {
     background-color: #ffffff;
     color: black;
 }
+
+
+/* footercode ends here */
+
+
 /* responsive code below*/
 @media screen and (max-width:1920px) {
     html {

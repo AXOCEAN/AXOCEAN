@@ -260,13 +260,13 @@ background-size: contain;
 }
 .designscontainer{
     display: flex;
-    flex-wrap: wrap;
+   flex-wrap:wrap;
     align-items: center;
     justify-content:space-between;
-  
-   
     padding: 5px;
-    /* gap: 15px; */
+    gap:15px;
+    /* flex-shrink: 100px; */
+
     
 }
 #hovereffect{
@@ -299,12 +299,15 @@ background-size: contain;
 
 
 .design{
-position: relative;
-    width: 200px;
+    position: relative; 
+    width:200px;
+
+   
     height: 320px;
     /* backdrop-filter: blur(2px); */
     /* background-color: #2f2f2f94; */
     background-color: white;
+   
     box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.072);
     /* border-radius: 20px; */
     padding: 0;
@@ -313,7 +316,7 @@ position: relative;
     justify-content: space-between;
     align-items: center;
     text-align: center;
-    margin-bottom: 20px;
+    /* margin-bottom: 20px; */
     overflow: hidden;
     /* border-radius: 15px; */
   transition: .3s ;
@@ -604,6 +607,8 @@ footer {
         font-size: 3rem;
 
     }
+  
+   
 
 }
 
@@ -620,6 +625,7 @@ footer {
         font-size: 3rem;
 
     }
+   
 }
 
 @media screen and (max-width:998px) {
@@ -646,6 +652,7 @@ footer {
         top: 2px;
         right: 2px;
     }
+  
 }
 
 @media screen and (max-width:768px) {
@@ -704,25 +711,54 @@ footer {
 
     }
     .design{
-        width: 185px;
+        width: 180px;
         height: 310px;
     }
   
 
 }
-@media screen and (max-width:380px){
+@media screen and (max-width:410px){
     .design
     {
         width: 165px;
         
     }
 }
+@media screen and (max-width:380px){
+    .design
+    {
+        width: 160px;
+        
+    }
+}
 @media screen and (max-width:355px){
+     .design
+    {
+        width: 140px;
+        height: 220px;
+        
+    } 
+}
+@media screen and (max-width:320px){
     .design
     {
         width: 130px;
         height: 220px;
         
+    }
+    .designscontainer{
+        gap: 0;
+    }
+}
+@media screen and (max-width:275px){
+    .design
+    {
+        width: 110px;
+        height: 200px;
+        
+    }
+    .designscontainer{
+        gap: 0;
     }
 }
 @media  (min-height:1800px) {
