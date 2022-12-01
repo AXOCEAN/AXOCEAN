@@ -235,6 +235,8 @@ function appearanceMOde() {
 document.getElementById("packaging_description").style.color = "black";
 document.getElementById("packaging_description2").style.color = "black";
 
+document.getElementById("fabric_description").style.color = "black";
+document.getElementById("fabric_description2").style.color = "black";
     //  productarticle
 
     document.getElementById("productarticle").style.color = "black";
@@ -343,6 +345,8 @@ document.getElementById("packaging_description2").style.color = "black";
 // productdescription
 document.getElementById("packaging_description").style.color = "white";
 document.getElementById("packaging_description2").style.color = "white";
+document.getElementById("fabric_description").style.color = "white";
+document.getElementById("fabric_description2").style.color = "white";
 //  productarticle
 
 document.getElementById("productarticle").style.color = "white";

@@ -427,13 +427,29 @@ body {
  
 
 }
-.boxes{
+.boxesandfabricmain{
     width: 100%;
     display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+.boxescontainer{
+    width: 50%;
+    display: flex;
     flex-direction: column;
-    height: 600px;
-    background-image: url(packaging.jpg);
-    background-size: cover;
+    padding-right: 10px;
+   
+}
+.boxes{
+    width: 100%;
+    height: 700px;
+    overflow: hidden;
+    
+}
+.boxes img{
+    width: 100%;
 }
 .packaging_description{
     font-size: 2rem;
@@ -455,7 +471,42 @@ body {
     
     
 }
-
+ .fabriccontainer{
+    width: 50%;
+    display: flex;
+    flex-direction:column;
+    padding-left:10px;
+ }
+ .fabric{
+    width: 100%;
+    height: 700px;
+    overflow: hidden;
+   
+ }
+ .fabric img{
+   width: 100%;
+  
+ }
+ .fabric_description{
+    font-size: 2rem;
+    font-family: Whitney, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    font-weight: 700;
+    width: 100%;
+    text-align: left;
+    padding-top: 20px;
+    
+}
+.fabric_description2{
+    font-size: 2rem;
+    font-family: Whitney, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    font-weight: 300;
+    width: 100%;
+    text-align: left;
+    
+    
+}
 /* packaging code ends here */
 
 /* product heading background transparent below */
@@ -1144,6 +1195,34 @@ footer {
        
 
     }
+    .boxesandfabricmain{
+        flex-direction: column;
+        gap: 20px;
+        height: fit-content;
+    }
+    .boxescontainer{
+        width: 100%;
+        padding-right: 0;
+        overflow: visible;
+       
+        
+      
+        
+    }
+    .fabriccontainer{
+        width: 100%;
+        padding-left: 0;
+        overflow: visible;
+    }
+    .boxes{
+        height: fit-content;
+        overflow: visible;
+      
+    }
+    .fabric{
+        height: fit-content;
+        overflow: visible;
+    }
 
 
 }
@@ -1190,6 +1269,7 @@ footer {
     .landingpagecontainer{
         background-image: url("LPbackground-min.jpeg");
     }
+   
 
 }
 
