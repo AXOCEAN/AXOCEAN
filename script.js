@@ -422,6 +422,21 @@ function topFunction() {
   document.documentElement.scrollTop = 0;
 }
 
+// for nav blur after scroll >>>>>>>>>>>
+window.onscroll = function(){
+  scrollblurFunction()
+};
 
 
- 
+function scrollblurFunction(){
+  if(document.body.scrollTop > 200 || document.documentElement.scrollTop > 200)
+  {
+    document.getElementById("navbar").style.backdropFilter = "blur(50px)";
+  }
+   else{
+      
+    document.getElementById("navbar").style.backgroundColor = "transparent";
+    document.getElementById("navbar").style.backdropFilter = "blur(0px)";
+      }
+}
+ // for nav blur after scroll >>>>>>>>

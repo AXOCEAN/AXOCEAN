@@ -100,9 +100,9 @@ body {
     transition-duration: .3s;
 }
 .view_product_button:hover{
-    color:#ed7a3c;
-    border:1px solid #ed7a3c ;
-    background-color: rgba(0, 0, 0);
+    color: rgb(134, 134, 247);
+    border:1px solid rgb(134, 134, 247) ;
+    /* background-color: rgba(0, 0, 0); */
     font-size: 2rem;
     font-weight: 800;
 }
@@ -172,8 +172,8 @@ body {
 
 .nav_bar {
     /* background-color: #fff; */
-    background-color: rgba(255, 255, 255, 0.388);
-    backdrop-filter: blur(15px);
+    /* background-color: rgba(255, 255, 255, 0.388); */
+    /* backdrop-filter: blur(15px); */
     position: fixed;
     top: 0;
     z-index: 98;
@@ -182,6 +182,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    
     /* box-shadow: 0px 0px 10px 0.1px gray; */
     
 }
@@ -255,9 +256,10 @@ body {
 
 .dropdownlist {
     background-color:#f4f4f4a0;
+    /* background-color: white; */
     width: 50%;
     height: 100%;
-    backdrop-filter: blur(15px);
+    backdrop-filter: blur(20px);
     padding: 50px;
     display: none;
    position: fixed;
@@ -278,6 +280,7 @@ body {
 .link1 {
     animation: dropdownlink .2s linear;
 }
+
 
 .link2 {
     animation: dropdownlink .3s linear;
@@ -394,7 +397,66 @@ body {
 }
 
 /* Animation Slider code above */
+/* packaging code starts from here */
+.packaging_container{
+    width: 100%;
+    height: fit-content;
+   
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0 20px;
 
+
+}
+.how_we_work{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.how_we_work span{
+    font-size: 4rem;
+   width: 100%;
+    font-weight: 500;
+    font-family: Whitney, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    padding-top: 40px;
+    padding-bottom: 10px;
+ 
+
+}
+.boxes{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    height: 600px;
+    background-image: url(packaging.jpg);
+    background-size: cover;
+}
+.packaging_description{
+    font-size: 2rem;
+    font-family: Whitney, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    font-weight: 700;
+    width: 100%;
+    text-align: left;
+    padding-top: 20px;
+    
+}
+.packaging_description2{
+    font-size: 2rem;
+    font-family: Whitney, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    font-weight: 300;
+    width: 100%;
+    text-align: left;
+    
+    
+}
+
+/* packaging code ends here */
 
 /* product heading background transparent below */
 .productmain {
