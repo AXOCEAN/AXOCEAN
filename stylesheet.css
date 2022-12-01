@@ -445,6 +445,7 @@ body {
 .boxes{
     width: 100%;
     height: 700px;
+   
     overflow: hidden;
     
 }
@@ -1136,7 +1137,15 @@ footer {
     }
 
 }
+@media screen and (max-width:1100px) {
+    .boxes{
+        height: 600px;
 
+    }
+    .fabric{
+        height: 600px;
+    }
+}
 @media screen and (max-width:998px) {
 
    
@@ -1195,35 +1204,13 @@ footer {
        
 
     }
-    .boxesandfabricmain{
-        flex-direction: column;
-        gap: 20px;
-        height: fit-content;
-    }
-    .boxescontainer{
-        width: 100%;
-        padding-right: 0;
-        overflow: visible;
-       
-        
-      
-        
-    }
-    .fabriccontainer{
-        width: 100%;
-        padding-left: 0;
-        overflow: visible;
-    }
     .boxes{
         height: fit-content;
-        overflow: visible;
-      
     }
     .fabric{
         height: fit-content;
-        overflow: visible;
     }
-
+    
 
 }
 
@@ -1269,7 +1256,35 @@ footer {
     .landingpagecontainer{
         background-image: url("LPbackground-min.jpeg");
     }
-   
+    .boxesandfabricmain{
+        flex-direction: column;
+        gap: 20px;
+        height: fit-content;
+    }
+    .boxescontainer{
+        width: 100%;
+        padding-right: 0;
+        overflow: visible;
+       
+        
+      
+        
+    }
+    .fabriccontainer{
+        width: 100%;
+        padding-left: 0;
+        overflow: visible;
+    }
+    .boxes{
+        height: fit-content;
+        overflow: visible;
+      
+    }
+    .fabric{
+        height: fit-content;
+        overflow: visible;
+    }
+
 
 }
 
