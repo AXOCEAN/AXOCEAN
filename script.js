@@ -154,8 +154,8 @@ function seedetails1colorresetFunction() {
     document.getElementById("item1-button").style.backgroundColor = "black";
   }
   else {
-    document.getElementById("item1-button").style.color = "white";
-    document.getElementById("item1-button").style.backgroundColor = "black";
+    document.getElementById("item1-button").style.color = "black";
+    document.getElementById("item1-button").style.backgroundColor = "white";
   }
 }
 
@@ -170,8 +170,8 @@ function seedetails2colorresetFunction() {
     document.getElementById("item2-button").style.backgroundColor = "black";
   }
   else {
-    document.getElementById("item2-button").style.color = "white";
-    document.getElementById("item2-button").style.backgroundColor = "black";
+    document.getElementById("item2-button").style.color = "black";
+    document.getElementById("item2-button").style.backgroundColor = "white";
   }
 }
 //button -3
@@ -185,8 +185,8 @@ function seedetails3colorresetFunction() {
     document.getElementById("item3-button").style.backgroundColor = "black";
   }
   else {
-    document.getElementById("item3-button").style.color = "white";
-    document.getElementById("item3-button").style.backgroundColor = "black";
+    document.getElementById("item3-button").style.color = "black";
+    document.getElementById("item3-button").style.backgroundColor = "white";
   }
 }
 //button -4
@@ -200,8 +200,8 @@ function seedetails4colorresetFunction() {
     document.getElementById("item4-button").style.backgroundColor = "black";
   }
   else {
-    document.getElementById("item4-button").style.color = "white";
-    document.getElementById("item4-button").style.backgroundColor = "black";
+    document.getElementById("item4-button").style.color = "black";
+    document.getElementById("item4-button").style.backgroundColor = "white";
   }
 }
 
@@ -215,9 +215,10 @@ function appearanceMOde() {
     // document.getElementById("navbar").style.backgroundColor = "white";
     // document.getElementById("navbar").style.boxShadow = " 0px 0px 10px 0.1px gray";
 
-    // document.getElementById("heading").style.color = "black";
+    document.getElementById("heading").style.color = "black";
 
-
+    document.getElementById("navbar").style.backdropFilter = "blur(50px)";
+    document.getElementById("navbar").style.backgroundColor = "transparent";
 
     //  hamburger lines
     // document.getElementById("hamburgerline1").style.color = "black";
@@ -228,6 +229,15 @@ function appearanceMOde() {
     // homebutton
     document.getElementById("homebtn").style.color = "black";
      document.getElementById("productarticle").style.color = "black";
+    //  how we work
+    document.getElementById("how_we_work").style.color = "black";
+// productdescription
+document.getElementById("packaging_description").style.color = "black";
+document.getElementById("packaging_description2").style.color = "black";
+
+    //  productarticle
+
+    document.getElementById("productarticle").style.color = "black";
    //oldprize--newprize
    document.getElementById("oldprize1").style.color = "#212121";
    document.getElementById("oldprize2").style.color = "#212121";
@@ -283,11 +293,9 @@ function appearanceMOde() {
     document.getElementById("item3container").style.background = "linear-gradient(rgb(236, 236, 236),rgb(203, 203, 203))";
     document.getElementById("item4container").style.background = "linear-gradient(rgb(236, 236, 236),rgb(203, 203, 203))";
 
-    //  banner or image slider
-    document.getElementById("slidermaindiv").style.border = "3px solid white";
+   
 
-    // slider div box shadow
-    document.getElementById("slidermaindiv").style.boxShadow = "1px 2px 10px gray";
+   
     // dropdownlist
     document.getElementById("exitbutton").style.color = "black";
     document.getElementById("ddlist").style.backgroundColor = "#f4f4f4a0";
@@ -314,31 +322,35 @@ function appearanceMOde() {
     // document.body.style.backgroundImage = "url('protruding-squares.svg')";
     document.body.style.backgroundColor ="#1b1b25"
 
-    // navbar
-    // document.getElementById("navbar").style.backgroundColor = "#0B0C10";
-    // document.getElementById("heading").style.color = "white";
+   
+    document.getElementById("heading").style.color = "white";
     // document.getElementById("navbar").style.boxShadow = " 0px 0px 10px 0.1px black";
-
+    document.getElementById("navbar").style.backdropFilter = "blur(50px)";
+    document.getElementById("navbar").style.backgroundColor = "rgb(0,0,0,0.555";
 
     // hamburger lines
     // document.getElementById("hamburgerline1").style.color = "white";
     // document.getElementById("hamburgerline2").style.color = "white";
     // document.getElementById("fas").style.color = "white";
-    // document.getElementById("hamburger").style.color = "white";
+    document.getElementById("hamburger").style.color = "white";
 
 
 
     // homebutton 
-    // document.getElementById("homebtn").style.color = "white";
+    document.getElementById("homebtn").style.color = "white";
+      //  how we work
+      document.getElementById("how_we_work").style.color = "white";
+// productdescription
+document.getElementById("packaging_description").style.color = "white";
+document.getElementById("packaging_description2").style.color = "white";
+//  productarticle
 
-    // slider div box shadow
-    document.getElementById("slidermaindiv").style.boxShadow = "0px 8px 10px rgba(1, 1, 1, 0.334)";
-    document.getElementById("productarticle").style.color = "white";
+document.getElementById("productarticle").style.color = "white";
 
   
     // items h1 and button 
-    // document.getElementById("item1-h1").style.backgroundColor = "black";
-    // document.getElementById("item1-button").style.backgroundColor = "black";
+    //  document.getElementById("item1-h1").style.backgroundColor = "white";
+    //  document.getElementById("item1-button").style.backgroundColor = "black";
     document.getElementById("item1-h1").style.color = "white";
     document.getElementById("item1-button").style.color = "black";
     document.getElementById("item1-button").style.backgroundColor = "white";
@@ -387,8 +399,7 @@ document.getElementById("newprize4").style.color = "#ed7a3c";
     document.getElementById("item3container").style.background = "linear-gradient(rgb(14, 14, 14),rgb(14, 14, 14))";
     document.getElementById("item4container").style.background = "linear-gradient(rgb(14, 14, 14),rgb(14, 14, 14))";
 
-    //  banner or image slider
-    document.getElementById("slidermaindiv").style.border = "3px solid black";
+   
 
     // dropdownlist
     document.getElementById("exitbutton").style.color = "white";
@@ -431,12 +442,34 @@ window.onscroll = function(){
 function scrollblurFunction(){
   if(document.body.scrollTop > 200 || document.documentElement.scrollTop > 200)
   {
-    document.getElementById("navbar").style.backdropFilter = "blur(50px)";
+    if (document.getElementById('switch').checked == false){
+      document.getElementById("navbar").style.backdropFilter = "blur(50px)";
+      document.getElementById("navbar").style.backgroundColor = "transparent";
+      document.getElementById("hamburger").style.color = "black";
+      document.getElementById("heading").style.color = "black";
+      document.getElementById("homebtn").style.color = "black";
+      
+    }
+    else{
+      document.getElementById("navbar").style.backdropFilter = "blur(50px)";
+      document.getElementById("navbar").style.backgroundColor = "rgb(0,0,0,0.555";
+      document.getElementById("hamburger").style.color = "white";
+      document.getElementById("heading").style.color = "white";
+      document.getElementById("homebtn").style.color = "white";
+    }
+   
   }
    else{
       
     document.getElementById("navbar").style.backgroundColor = "transparent";
     document.getElementById("navbar").style.backdropFilter = "blur(0px)";
+    document.getElementById("hamburger").style.color = "black";
+    document.getElementById("heading").style.color = "black";
+    document.getElementById("homebtn").style.color = "black";
       }
+     
 }
  // for nav blur after scroll >>>>>>>>
+
+
+

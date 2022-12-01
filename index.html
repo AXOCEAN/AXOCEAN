@@ -7,7 +7,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
   <meta name="theme-color" content="#a1a783">
   <title>AXOCEAN</title>
+  <!-- aos cdn -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <!-- stylesheet -->
   <link rel="stylesheet" href="stylesheet.css">
+  <!-- fontawesome -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
     integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous" />
 
@@ -28,7 +32,7 @@
     <div class="nav_bar" id="navbar">
 
       <!-- Home button -->
-      <button class="btn"><a id="homebtn" class="fa fa-home" href="axoceanmainpage.html"></a></button>
+      <button class="btn"><a id="homebtn" class="fa fa-home" href="index.html"></a></button>
 
       <!-- heading  -->
       <div class="heading" id="heading" onclick="topFunction()">AXOCEAN</div>
@@ -107,15 +111,16 @@
       
              <!-- for how products are made -->
              <!-- packaging styles -->
-             <div class="packaging_container">
-              <div class="how_we_work"><span> How We Work</span></div>
+             <div class="packaging_container" data-aos="fade-up">
+              <div class="how_we_work" id="how_we_work" data-aos="slide-right"><span> How We Work</span></div>
               <div class="boxes">
               </div>
-              <span class="packaging_description">Quality & Modular Packaging</span>
-              <span class="packaging_description2">Wooden Boxes</span>
+              <span class="packaging_description" id="packaging_description">Quality & Modular Packaging</span>
+              <span class="packaging_description2" 
+              id="packaging_description2" data-aos="slide-right">Wooden Boxes</span>
              </div>
     <!-- products heading -->
-    <div class="productmain">
+    <div class="productmain" data-aos="slide-left">
       <div class="productheading_div" id="productheading_div">
         <article id="productarticle">PRODUCTS</article>
       </div>
@@ -125,7 +130,7 @@
     <!-- main products -->
     <div class="mainbody" id="mainbody">
       <a class="item-a-tag" href="Bow-Clips-Designs.html">
-        <div id="item4container" class="items item-4">
+        <div id="item4container" class="items item-4" data-aos="slide-up" >
           <div class="itemimagecontainer" >
           <img src="EDITED-IMG-20221113-WA0013.jpg" alt="">
         </div>
@@ -140,7 +145,7 @@
       </a>
 
       <a id="itematag" class="item-a-tag" href="axoceanpage2.html">
-        <div id="item1container" class="items item-1">
+        <div id="item1container" class="items item-1"  data-aos="slide-up">
           <div class="itemimagecontainer">
           <img src="sample1.jpg" alt="">
         </div>
@@ -155,7 +160,7 @@
       </a>
 
       <a class="item-a-tag" href="axoceanpage2.html">
-        <div id="item2container" class="items item-2">
+        <div id="item2container" class="items item-2"  data-aos="slide-up">
           <div class="itemimagecontainer">
           <img src="sample2.jpg" alt="">
           </div>
@@ -171,7 +176,7 @@
 
 
       <a class="item-a-tag" href="axoceanpage2.html">
-        <div id="item3container" class="items item-3">
+        <div id="item3container" class="items item-3"  data-aos="slide-up">
           <div class="itemimagecontainer" >
           <img src="sample3.jpg" alt="">
           </div>
@@ -257,6 +262,10 @@
   <!-- script -->
   <script src="script.js">
   </script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
  
 </body>
 
